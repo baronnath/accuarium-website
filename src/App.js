@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import * as React from 'react';
 import './App.css';
+import translator from './translator/translator';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import theme from './theme';
+import NavBar from './components/NavBar';
+import Hero from './components/Hero';
+import Button from '@mui/material/Button';
 
 function App() {
+
+  const i18n = translator();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={createTheme(theme)}>
+        <NavBar/>
+        <Hero/>
+        <Button color="primary" variant="contained">
+          Download
+        </Button>
+    </ThemeProvider>
   );
 }
+
+const styles = {
+ 
+};
 
 export default App;

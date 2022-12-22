@@ -1,18 +1,20 @@
 import React from 'react';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import { Link, Box, Button, Typography } from '@mui/material';
 import heroVideo from '../assets/video/pexels-water-bg.mp4';
 import { useTheme } from '@mui/material/styles';
 import { useWindowDimensions } from '../helpers/global';
+import translator from '../translator/translator';
+import theme, { colors } from '../theme';
 
 const Hero = () => {
+
+  const i18n = translator();
 
   const theme = useTheme();
   const { height, width } = useWindowDimensions();
 
    return (
-    <section style={styles.root}>
+    <section style={styles.root} id="section0">
       <video
         autoPlay
         muted
@@ -29,13 +31,33 @@ const Hero = () => {
           justifyContent="center"
           alignItems="center"
           color="#fff"
+          sx={styles.textContainer}
         >
-          <Typography variant="h3" component="h1" style={styles.title}>
-            Plan your tank like a pro
+          {/* <Typography variant="h3" component="h1" style={styles.title}>
+            {i18n.t('hero.title')}
           </Typography>
-          <Button color="primary" variant="contained">
-            Download
+          <Typography variant="h6" component="h3" style={styles.subtitle}>
+            {i18n.t('hero.subtitle')}
+          </Typography>
+          <Box sx={styles.downloadButtonContainer}>
+            <a href={i18n.t('googlePlay.href')}>
+              <img style={styles.downloadButton} alt={i18n.t('googlePlay.alt')} src={i18n.t('googlePlay.src')}/>
+            </a>
+          </Box> */}
+
+          <Typography variant="h3" component="h1" style={styles.title}>
+            {i18n.t('prelaunch.hero.title')}
+          </Typography>
+          <Typography variant="subtitle1" component="h3" style={styles.subtitle}>
+            {i18n.t('prelaunch.hero.subtitle')}
+          </Typography>
+          <Button variant="contained" size="large">
+            <Link href="/subscribe" underline="none" style={styles.callToAction}>
+              {i18n.t('prelaunch.hero.callToAction')}
+            </Link>
           </Button>
+          
+          
         </Box>
       </div>
     </section>
@@ -51,8 +73,8 @@ const styles = {
     height: '100vh',
   },
   video: {
-    height: "100%",
-    width: "100%",
+    height: "100vh",
+    width: "calc(100vw - (100vw - 100%))",
     objectFit: "cover"
   },
   overlay: {
@@ -65,6 +87,27 @@ const styles = {
   },
   title: {
     // paddingBottom: theme.spacing(4),
+  },
+  subtitle: {
+    marginBottom: 20,
+    color: colors.white,
+    paddingLeft: '20%',
+    paddingRight: '20%',
+  },
+  textContainer: {
+    textAlign: 'center',
+    px: 5,
+  },
+  downloadButtonContainer: {
+    width: {xs: '50%', sm:'30%', md:'20%'},
+  },
+  downloadButton: {
+    maxWidth: '100%',
+    height: 'auto',
+  },
+  callToAction: {
+    fontWeight: 'bold',
+    color: colors.white,
   }
 }
 

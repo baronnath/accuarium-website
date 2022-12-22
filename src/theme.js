@@ -4,7 +4,7 @@ import color from 'color';
 
 export const colors = {
   primary: '#00bcba',
-   accent: '#ff9300',
+  accent: '#ff9300',
   secondary: '#ff9300',
   terciary: '#04decf',
   quaternary: '#04aad4',
@@ -16,22 +16,58 @@ export const colors = {
   placeholder: color('#000000').alpha(0.54).rgb().string(),
   disabled: color('#000000').alpha(0.26).rgb().string(),
   transparent: color('#000000').alpha(0).rgb().string(),
+  white: '#fff',
 };
+
+const aleo = [
+  'Aleo',
+  'serif',
+].join(',');
 
 const theme = {
   palette: {
+    mode: 'dark',
     primary: {
       main: colors.primary
     },
     secondary: {
       main: colors.secondary
-    }
+    },
+    // background: {
+    //   default: '#00bcba',
+    //   paper: '#00bcba',
+    // },
+    // text: {
+    //   primary: '#fff',
+    //   secondary: '#fff',
+    // },
   },
   typography: {
-    h6: {
-      color: colors.primary,
-    }
-  }
+    fontFamily: [
+      'Montserrat',
+      'Roboto',
+      '"Helvetica Neue"',
+      'sans-serif',
+    ].join(','),
+    h1: {
+      fontFamily: aleo
+    },
+    h2: {
+      fontFamily: aleo
+    },
+    h3: {
+      fontFamily: aleo
+    },
+  },
+  components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          textDecoration: 'none',
+        },
+      },
+    },
+  },
 };
 
 

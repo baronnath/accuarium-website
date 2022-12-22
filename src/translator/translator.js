@@ -11,8 +11,13 @@ i18n.translations = {
 i18n.fallbacks = true;
 
 export default (locale = null) => {
-    if(!locale)
+    if(!locale){
       locale = navigator.language || navigator.userLanguage
+
+      // Remove country code (after the hyphen)
+      const splitted = locale.split('-');
+      locale = splitted[0];
+    }
 
     i18n.locale = locale;
     return i18n;

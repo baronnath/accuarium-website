@@ -1,11 +1,11 @@
 // src/helpers/axios.js
 
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { backend } from '../../app.json';
-
-const ax = require('axios');
+import { default as ax } from 'axios';
+import config from '../config/app.json';
 // const http	= require('http');
 // const https = require('https');
+
+const backend = config.backend;
 
 export const axios = ax.create({
 	timeout: 60000, // 60sec
@@ -20,7 +20,7 @@ export const axios = ax.create({
 
 export const setHeaders = async (user) => {
 	if(!user) {
-		user = await AsyncStorage.getItem('user');
+		user = JSON.parse(localStorage.getItem('user'));
 	}
 
 	const token = user.accessToken;
@@ -29,6 +29,17 @@ export const setHeaders = async (user) => {
 }
 
 export class Api {
+
+	// headers must be set every call as it's deleted after page load
+	constructor() {
+    setHeaders();
+  }
+
+	// Login
+
+	static login(params){
+		return axios.post(backend.url + '/user/login', params);
+	}
 
 	// Tank
 
@@ -56,11 +67,36 @@ export class Api {
 		return axios.get(backend.url + '/species', {params: params});
 	}
 
+	// data is a FormData instaca.
+	//
+	// Example:
+	//
+	// let data = new FormData();
+	// data.append('file', file);
+	uploadSpeciesFile(data) {
+		return axios.post(backend.url + '/species/uploadFile', data);
+	}
+
+
+	// Compatibilities
+
+	uploadCompatibilityFile(data) {
+		return axios.post(backend.url + '/compatibility/uploadFile', data)
+	}
 
 	// Locale
 
 	static getLocales(params) {
 		return axios.get(backend.url + '/locales');
 	}
+
+
+  // Leads
+
+  static createLead(params) {
+    return axios.post(backend.url + '/lead', params);
+  }
+
+
 
 }

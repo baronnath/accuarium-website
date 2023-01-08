@@ -1,9 +1,9 @@
 const en = {
   prelaunch: {
     hero: {
-      title: 'EARLY ACCESS',
-      subtitle: 'Free access to the Accuarium early release version',
-      callToAction: 'Subscribe',
+      title: 'Create your own balanced tank',
+      subtitle: 'Free access to the accuarium early release version',
+      callToAction: 'Get early access',
     }
   },
   hero: {

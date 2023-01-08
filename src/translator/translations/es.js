@@ -3,7 +3,7 @@ const es = {
     hero: {
       title: 'Prelanzamiento',
       subtitle: 'Accede a la versión beta gratuitamente',
-      callToAction: 'Suscríbete',
+      callToAction: 'Conseguir acceso prioritario',
     }
   },
   hero: {

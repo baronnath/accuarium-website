@@ -6,7 +6,7 @@ const CookiesPolicy = () => {
   return (
     <Container style={styles.container}>
       <Typography variant="h3" component="h1">POLÍTICA DE COOKIES</Typography>
-      <Typography variant="h5" component="h2">http://www.accuarium.com</Typography>
+      <Typography variant="h5" component="h2">https://www.accuarium.app</Typography>
       <br/>
 
       <Typography variant="body2">

@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
   return (
     <Container style={styles.container}>
       <Typography variant="h3" component="h1">POLÍTICA DE PRIVACIDAD DEL SITIO WEB</Typography>
-      <Typography variant="h5" component="h2">http://www.accuarium.com</Typography>
+      <Typography variant="h5" component="h2">https://www.accuarium.app</Typography>
       <br/>
 
       <Typography variant="h6" component="h3">I. POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS</Typography>
@@ -152,7 +152,7 @@ const PrivacyPolicy = () => {
           <li>Derecho de oposición: Es el derecho del Usuario a que no se lleve a cabo el tratamiento de sus datos de carácter personal o se cese el tratamiento de los mismos por parte de Accuarium.</li>
           <li>Derecho a no ser objeto de una decisión basada únicamente en el tratamiento automatizado, incluida la elaboración de perfiles: Es el derecho del Usuario a no ser objeto de una decisión individualizada basada únicamente en el tratamiento automatizado de sus datos personales, incluida la elaboración de perfiles, existente salvo que la legislación vigente establezca lo contrario.</li>
         </ul>
-        Así pues, el Usuario podrá ejercitar sus derechos mediante comunicación escrita dirigida al Responsable del tratamiento con la referencia "RGPD-http://www.accuarium.com", especificando:
+        Así pues, el Usuario podrá ejercitar sus derechos mediante comunicación escrita dirigida al Responsable del tratamiento con la referencia "RGPD-https://www.accuarium.app", especificando:
         <ul>
           <li>Nombre, apellidos del Usuario y copia del DNI. En los casos en que se admita la representación, será también necesaria la identificación por el mismo medio de la persona que representa al Usuario, así como el documento acreditativo de la representación. La fotocopia del DNI podrá ser sustituida, por cualquier otro medio válido en derecho que acredite la identidad.</li>
           <li>Petición con los motivos específicos de la solicitud o información a la que se quiere acceder.</li>

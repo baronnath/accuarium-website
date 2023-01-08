@@ -6,7 +6,7 @@ const LegalNotice = () => {
   return (
     <Container style={styles.container}>
       <Typography variant="h3" component="h1">AVISO LEGAL Y CONDICIONES GENERALES DE USO</Typography>
-      <Typography variant="h5" component="h2">http://www.accuarium.com</Typography>
+      <Typography variant="h5" component="h2">https://www.accuarium.app</Typography>
       <br/>
 
       <Typography variant="h6" component="h3">I. INFORMACIÓN GENERAL</Typography>
@@ -15,7 +15,7 @@ const LegalNotice = () => {
         <br/>
         En cumplimiento con el deber de información dispuesto en la Ley 34/2002 de Servicios de la Sociedad de la Información y el Comercio Electrónico (LSSI-CE) de 11 de julio, se facilitan a continuación los siguientes datos de información general de este sitio web:
         <br/>
-        La titularidad de este sitio web, http://www.accuarium.com, (en adelante, Sitio Web) la ostenta: Natán Morote, con NIF: 50971986F, y cuyos datos de contacto son:
+        La titularidad de este sitio web, https://www.accuarium.app, (en adelante, Sitio Web) la ostenta: Natán Morote, con NIF: 50971986F, y cuyos datos de contacto son:
         <br/>
         Dirección: Carrer de la Paloma 3 1-1, 08001 Barcelona
         <br/>

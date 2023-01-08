@@ -6,20 +6,20 @@ const Terms = () => {
   return (
     <Container style={styles.container}>
       <Typography variant="h3" component="h1">CONDICIONES GENERALES DE VENTA</Typography>
-      <Typography variant="h5" component="h2">http://www.accuarium.com</Typography>
+      <Typography variant="h5" component="h2">https://www.accuarium.app</Typography>
       <br/>
 
       <Typography variant="h6" component="h3">1. INFORMACIÓN GENERAL</Typography>
       <Typography variant="body2">
         Respetando lo establecido en la legislación vigente, Accuarium (en adelante, también Sitio Web) se compromete a adoptar las medidas técnicas y organizativas necesarias, según el nivel de seguridad adecuado al riesgo de los datos recogidos.
         <br/>            
-        La titularidad de este sitio web http://www.accuarium.com, (en adelante Sitio Web) la ostenta: Natán Morote, con NIF: 50971986F, y cuyos datos de contacto son:
+        La titularidad de este sitio web https://www.accuarium.app, (en adelante Sitio Web) la ostenta: Natán Morote, con NIF: 50971986F, y cuyos datos de contacto son:
         <br/>
-        Dirección: Carrer de la Paloma 3 1-1, 08001 Barcelona
+        Dirección: Rambla Poblenou 191 6-2, 08018 Barcelona
         <br/>
         Teléfono de contacto: 644163436
         <br/>
-        Email de contacto: hello@accuarium.com
+        Email de contacto: hi@accuarium.app
         <br/>
         Este documento (así como otros documentos que aquí se mencionen) regula las condiciones por las que se rige el uso de este Sitio Web (http://accuarium.com) y la compra o adquisición de productos y/o servicios en el mismo (en adelante, Condiciones).
         <br/>

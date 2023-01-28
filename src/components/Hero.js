@@ -3,6 +3,7 @@ import { Link, Box, Button, Typography } from '@mui/material';
 import heroVideo from '../assets/video/pexels-water-bg.mp4';
 import { useTheme } from '@mui/material/styles';
 import { useWindowDimensions } from '../helpers/global';
+import Subscribe from './Subscribe';
 import translator from '../translator/translator';
 import theme, { colors } from '../theme';
 
@@ -48,16 +49,7 @@ const Hero = () => {
           <Typography variant="h3" component="h1" style={styles.title}>
             {i18n.t('prelaunch.hero.title')}
           </Typography>
-          <Typography variant="subtitle1" component="h3" style={styles.subtitle}>
-            {i18n.t('prelaunch.hero.subtitle')}
-          </Typography>
-          <Button variant="contained" size="large">
-            <Link href="/subscribe" underline="none" style={styles.callToAction}>
-              {i18n.t('prelaunch.hero.callToAction')}
-            </Link>
-          </Button>
-          
-          
+          <Subscribe/>
         </Box>
       </div>
     </section>
@@ -95,7 +87,7 @@ const styles = {
     paddingRight: '20%',
   },
   textContainer: {
-    textAlign: 'center',
+    textAlign: 'left',
     px: 5,
   },
   downloadButtonContainer: {

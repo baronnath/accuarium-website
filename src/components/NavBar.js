@@ -12,6 +12,7 @@ import { colors } from '../theme';
 
 const i18n = translator();
 
+// Home menu
 const homePages = [{ 
     label: i18n.t('menu.feature'),
     ref: 'sectionFeature',
@@ -25,13 +26,10 @@ const homePages = [{
     ref: 'sectionFaq',
   }];
 
+// Web menu (rest of pages)
 const webPages = [{
     label: i18n.t('menu.home'),
     ref: '/',
-  }, 
-  { 
-    label: i18n.t('menu.subscribe'),
-    ref: '/subscribe',
   },
   { 
     label: i18n.t('menu.press'),

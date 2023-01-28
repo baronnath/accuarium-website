@@ -14,8 +14,9 @@ export default function Alert({message, type = "info", isOpen = false, onClose =
       autoHideDuration={6000}
       onClose={handleClose}
       anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+      style={{zIndex: 10000}}
     >
-      <Muialert severity={type} onClose={handleClose} variant="outlined">{message}</Muialert>
+      <Muialert severity={type} onClose={handleClose}>{message}</Muialert>
     </Snackbar>
   );
 }

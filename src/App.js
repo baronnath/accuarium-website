@@ -75,7 +75,6 @@ function App() {
         <Routes>
           <Route path="" element={<FrontTemplate />}>
             <Route path="/" element={<Home />} />
-            <Route path="subscribe" element={<Subscribe />} />
             <Route path="press" element={<Press />} />
 
             <Route path="privacy-policy" element={<PrivacyPolicy />} />

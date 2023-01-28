@@ -17,6 +17,7 @@ import translator from '../translator/translator';
 import validator from '../validators/subscribe';
 import { Api } from '../helpers/axios';
 import subscribe from '../validators/subscribe';
+import theme, { colors } from '../theme';
 
 
 const Subscribe = () => {
@@ -106,13 +107,7 @@ const Subscribe = () => {
   };
 
   return (
-    <Container style={styles.container}>
-      <Typography variant="h2" component="h1">
-        {i18n.t('subscribe.title')}
-      </Typography>
-      <Typography variant="h5" component="h2">
-        {i18n.t('subscribe.subtitle')}
-      </Typography>
+    <>
 
       <form>
         <Box style={styles.box}>
@@ -139,9 +134,10 @@ const Subscribe = () => {
                   onChange={handleChange}
                   checked={subscriber.values.policy}
                   name="policy"
+                  size="small"
                 />
               }
-              label={i18n.t('subscribe.policy.label')}
+              label={<Typography style={styles.checkboxText}>{i18n.t('subscribe.policy.label')}</Typography>}
               aria-describedby="policy-helper"
               sx={{marginTop: '15px'}}
             />
@@ -152,15 +148,17 @@ const Subscribe = () => {
         </FormGroup>
         
         <Box style={styles.box}>
-          <Button variant="contained" size="large" color="secondary" onClick={handleSubmit}>
-            {i18n.t('subscribe.submit')}
+          <Button variant="contained" size="large" color="primary" onClick={handleSubmit} style={styles.callToAction}>
+            {i18n.t('prelaunch.hero.callToAction')}
           </Button>
         </Box>
       </form>
 
+      {/*
       <Box style={{marginTop: 80}}>
         <Typography>{i18n.t('subscribe.description')}</Typography>
       </Box>
+      */}
 
       <Alert
         message={alert.message}
@@ -171,7 +169,8 @@ const Subscribe = () => {
           open: false,
         }))}
       />
-    </Container>
+
+    </>
   );
 };
 
@@ -181,6 +180,13 @@ const styles = {
   },
   box: {
     marginTop: 30,
+  },
+  checkboxText: {
+    fontSize: 12,
+  },
+  callToAction: {
+    fontWeight: 'bold',
+    color: colors.white,
   }
 };
 

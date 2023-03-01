@@ -22,6 +22,7 @@ import Login from './components/dashboard/Login';
 import DashboardContainer from './components/dashboard/DashboardContainer';
 import DashboardMenu from './components/dashboard/Menu';
 import Dashboard from './components/dashboard/Dashboard';
+import Permissions from './components/dashboard/Permissions';
 import FileUpload from './components/dashboard/FileUpload';
 
 import PrivacyPolicy from './components/legal/PrivacyPolicy';
@@ -85,6 +86,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="dashboard" element={<DashboardTemplate />}>
             <Route path="" element={<DashboardRoute><Dashboard /></DashboardRoute>} />
+            <Route path="permissions" element={<DashboardRoute><Permissions /></DashboardRoute>} />
             <Route path="file-upload" element={<DashboardRoute><FileUpload /></DashboardRoute>} />
           </Route>
         </Routes>

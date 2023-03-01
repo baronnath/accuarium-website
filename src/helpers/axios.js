@@ -91,6 +91,17 @@ export class Api {
 	}
 
 
+	// Permissions
+
+	getPermissions(params) {
+		return axios.get(backend.url + '/permissions');
+	}
+
+	updatePermission(params) {
+		return axios.put(backend.url + '/permission', params);
+	}
+
+
   // Leads
 
   static createLead(params) {

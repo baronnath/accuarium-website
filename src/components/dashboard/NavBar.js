@@ -7,7 +7,10 @@ import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import Icon from '@mdi/react';
-import { mdiViewDashboardOutline, mdiFileUploadOutline } from '@mdi/js';
+import {
+  mdiViewDashboardOutline,
+  mdiFileUploadOutline,
+  mdiShieldAccountVariantOutline } from '@mdi/js';
 import Divider from '@mui/material/Divider';
 import translator from '../../translator/translator';
 
@@ -22,6 +25,16 @@ import translator from '../../translator/translator';
           />
         </ListItemIcon>
         <ListItemText primary="Dashboard" />
+      </ListItemButton>
+       <ListItemButton component={Link} to="/dashboard/permissions">
+        <ListItemIcon>
+          <Icon
+            path={mdiShieldAccountVariantOutline}
+            title="Permissions"
+            size={1}
+          />
+        </ListItemIcon>
+        <ListItemText primary="Permissions" />
       </ListItemButton>
       <ListItemButton component={Link} to="/dashboard/file-upload">
         <ListItemIcon>

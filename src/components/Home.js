@@ -85,26 +85,26 @@ const Home = () => {
               <Icon
                 path={mdiHeart}
                 title={i18n.t('home.section4.title.line1')}
-                size={3}
+                size={6}
                 style={{position:'absolute', left:'60%', top:'30%' }}
               />
               <Icon
                 path={mdiThumbUp}
                 title={i18n.t('home.section4.title.line1')}
-                size={2}
-                style={{position:'absolute', left:'35%', top:'5%' }}
+                size={4}
+                style={{position:'absolute', left:'30%', top:'-30%' }}
               />
               <Icon
                 path={mdiShareVariant}
                 title={i18n.t('home.section4.title.line1')}
-                size={5}
-                style={{position:'absolute', right:'40%', bottom:'-50%' }}
+                size={10}
+                style={{position:'absolute', right:'40%', bottom:'-100%' }}
               />
             </Grid>
-            <Grid item xs={12} sm={6} sx={{marginTop: {xs: 10, sm: 0}}}>
+
+            <Grid item xs={12} sm={6} sx={{marginTop: {xs: 10, sm: 0, md: 30}}}>
               <Typography variant="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section4.title.line1')}</Typography>
               <Typography variant="h6" component="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section4.subtitle')}</Typography>
-
             </Grid>
           </Grid>
 

@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import Icon from '@mdi/react';
-import { mdiInstagram, mdiFacebook, mdiGithub, mdiHome, mdiTwitter} from '@mdi/js'
+import { mdiInstagram, mdiFacebook, mdiGithub, mdiWeb, mdiTwitter} from '@mdi/js'
 
 // if you wanto to add twitter
 // import TwitterIcon from '@material-ui/icons/Twitter';
@@ -17,7 +17,7 @@ const socialMedia = {
 
 
 
-const Social = ({ color }) => {
+const Social = ({ color, align = 'center', style }) => {
   const theme = useTheme();
  
 
@@ -37,7 +37,7 @@ const Social = ({ color }) => {
   };
 
   return (
-    <Grid item container spacing={2} justifyContent="center">
+    <Grid item container spacing={2} justifyContent={align} style={style}>
       <Grid
         item
         component={"a"}
@@ -46,7 +46,7 @@ const Social = ({ color }) => {
         href={socialMedia.homepage}
       >
         <Icon
-          path={mdiHome}
+          path={mdiWeb}
           title="home"
           size={1}
           color={color ? color : "primary"}

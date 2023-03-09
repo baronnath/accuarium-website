@@ -170,6 +170,11 @@ const en = {
     success: 'File uploaded succesfully',
     error: 'File upload error',
   },
+  thankYou: {
+    title: 'Thank you for subscribing',
+    subtitle: 'We\'ll keep you posted!',
+    description: 'You\'ll receive an invitation email as soon as the early access is available',
+  }
 }
 
 export default en;

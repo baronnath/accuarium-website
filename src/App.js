@@ -17,6 +17,7 @@ import Home from './components/Home';
 import Press from './components/Press';
 import Subscribe from './components/Subscribe';
 import Footer from './components/Footer';
+import ThankYou from './components/ThankYou';
 
 import Login from './components/dashboard/Login';
 import DashboardContainer from './components/dashboard/DashboardContainer';
@@ -77,6 +78,7 @@ function App() {
           <Route path="" element={<FrontTemplate />}>
             <Route path="/" element={<Home />} />
             <Route path="press" element={<Press />} />
+            <Route path="thankyou" element={<ThankYou />} />
 
             <Route path="privacy-policy" element={<PrivacyPolicy />} />
             <Route path="cookies-policy" element={<CookiesPolicy />} />

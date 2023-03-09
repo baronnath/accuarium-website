@@ -1,4 +1,5 @@
 import React, {useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   Container,
   FormControl,
@@ -23,7 +24,8 @@ import theme, { colors } from '../theme';
 const Subscribe = () => {
 
   const i18n = translator();
-  const locale = navigator.language;
+  const locale = navigator.language.split('-').shift();
+  const navigate = useNavigate();
 
   const [alert, setAlert] = useState({
     message: null,
@@ -93,10 +95,10 @@ const Subscribe = () => {
         type: 'success',
         open: true,
       }));
-      setSubscriber(initiateSubscriber());
+      setSubscriber(initiateSubscriber()); // Reset form
+      navigate('/thankyou', { replace: true });
     })
     .catch(err => {
-      console.log('ERROR', err)
       setAlert(prevAlert => ({
         ...prevAlert,
         message: err.response.data ? err.response.data.message : i18n.t('networkError'),

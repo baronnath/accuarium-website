@@ -170,6 +170,11 @@ const es = {
     success: 'El archivo se ha subido correctamente',
     error: 'Se ha producido un error al subir el archivo',
   },
+  thankYou: {
+    title: 'Gracias por suscrbiirte',
+    subtitle: 'Te mantendremos informado!',
+    description: 'Recibirás un email con la invitación tan pronto como la version veta esté disponible',
+  }
 };
 
 export default es;

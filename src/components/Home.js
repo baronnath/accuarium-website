@@ -60,7 +60,7 @@ const Home = () => {
             <Grid item xs={12} sm={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
               <Box style={styles.bgCircle} sx={{height: {xs:'85vw', sm:'40vw', md:'400px'}, width: {xs:'85vw', sm:'40vw', md:'400px'}}}></Box>
               <Box justifyContent="center" display="flex">
-                <img style={{maxWidth:'75%'}} alt="species screenshot" src={require('../assets/img/species-screen.png')}/>
+                <img style={{maxWidth:'75%'}} alt="species screenshot" src={require('../assets/img/species-screenshot.png')}/>
               </Box>
             </Grid>
             <Grid item xs={12} sm={6} sx={{marginTop: {xs: 5, sm: 0}}}>
@@ -74,37 +74,54 @@ const Home = () => {
               <Typography variant="h6" component="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section3.subtitle')}</Typography>
             </Grid>
             <Grid item xs={12} sm={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-              <img height="400"/>
-              <Box style={styles.bgCircle} sx={{height: {xs:'75vw', sm:'30vw'}, width: {xs:'75vw', sm:'30vw'}}}></Box>
+              <Box style={styles.bgCircle} sx={{height: {xs:'85vw', sm:'40vw', md:'400px'}, width: {xs:'85vw', sm:'40vw', md:'400px'}}}></Box>
+              <Box justifyContent="center" display="flex">
+                <img style={{maxWidth:'75%'}} alt="species screenshot" src={require('../assets/img/graphic-tank-species-screenshot.png')}/>
+              </Box>
+            </Grid>
+          </Grid>
+
+          <Grid container spacing={2} style={styles.sectionContainer} sx={{ marginTop:20 }}>
+            <Grid item xs={12} sm={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+              <Box style={styles.bgCircle} sx={{height: {xs:'70vw', sm:'40vw', md:'400px'}, width: {xs:'70vw', sm:'40vw', md:'400px'}}}></Box>
+              <Box justifyContent="center" display="flex">
+                <img style={{maxWidth:'60%', border: 'solid 1.5px white', borderRadius: 30}} alt="species screenshot" src={require('../assets/img/species-compatibility-issue.png')}/>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Typography variant="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section3.title.line1')}<br/>{i18n.t('home.section3.title.line2')}</Typography>
+              <Typography variant="h6" component="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section3.subtitle')}</Typography>
             </Grid>
           </Grid>
 
           <Grid container spacing={2} style={styles.sectionContainer} sx={{ marginTop:10 }}>
-            <Grid item xs={12} sm={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', position:'relative', minHeight: '150px'}}>
-              <Box style={styles.bgCircle} sx={{height: {xs:'30vw', sm:'15vw', md:'150px'}, width: {xs:'30vw', sm:'15vw', md:'150px'}}}></Box>
+            <Grid item xs={12} sm={6} sx={{marginTop: {xs: 10, sm: 0, md: 30}}}>
+              <Typography variant="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section4.title.line1')}</Typography>
+              <Typography variant="h6" component="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section4.subtitle')}</Typography>
+            </Grid>
+            <Grid item xs={12} sm={6} sx={{marginTop: 5}} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', position:'relative', minHeight: '150px'}}>
+              <Box style={styles.bgCircle} sx={{height: {xs:'30vw', sm:'30vw', md:'300px'}, width: {xs:'30vw', sm:'30vw', md:'300px'}}}></Box>
+              <Box justifyContent="center" display="flex">
+                <img style={{maxWidth:'50%'}} alt="species screenshot" src={require('../assets/img/tank-screenshot.png')}/>
+              </Box>
               <Icon
                 path={mdiHeart}
                 title={i18n.t('home.section4.title.line1')}
                 size={6}
-                style={{position:'absolute', left:'60%', top:'30%' }}
+                style={{position:'absolute', left:'60%', top:'10%' }}
               />
               <Icon
                 path={mdiThumbUp}
                 title={i18n.t('home.section4.title.line1')}
                 size={4}
-                style={{position:'absolute', left:'30%', top:'-30%' }}
+                style={{position:'absolute', left:'30%', top:'-10%' }}
               />
               <Icon
                 path={mdiShareVariant}
                 title={i18n.t('home.section4.title.line1')}
-                size={10}
-                style={{position:'absolute', right:'40%', bottom:'-100%' }}
+                size={12}
+                style={{position:'absolute', right:'30%', bottom:'-20%' }}
               />
-            </Grid>
-
-            <Grid item xs={12} sm={6} sx={{marginTop: {xs: 10, sm: 0, md: 30}}}>
-              <Typography variant="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section4.title.line1')}</Typography>
-              <Typography variant="h6" component="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section4.subtitle')}</Typography>
             </Grid>
           </Grid>
 

@@ -49,10 +49,10 @@ jobs:
           host: ${{ secrets.IP }}
           port: ${{ secrets.PORT }}
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.KEY }}
+          password: ${{ secrets.PASSWORD }}
           script: |
-            cd /home/accua/public_html/accuarium-website
+            cd /home/accua/accuarium-website
             git checkout .
             git pull
             npm run build
-            mv ./build/* ../
+            mv ./build/* ../public_html/

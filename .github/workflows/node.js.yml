@@ -54,5 +54,5 @@ jobs:
             cd /home/accua/accuarium-website
             git checkout .
             git pull
-            npm run build
+            /opt/nvm/versions/node/v14.21.3/bin/npm run build
             mv ./build/* ../public_html/

@@ -1,6 +1,6 @@
 {
   "backend": {
-    "url": "http://localhost:8080",
-    "imagesUrl": "http://localhost:8080/images/"
+    "url": "https://api.accuarium.app:8080",
+    "imagesUrl": "https://api.accuarium.app:8080/images/"
   }
 }

@@ -24,6 +24,7 @@ export const setHeaders = async (user) => {
 	}
 
 	const token = user.accessToken;
+	axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 	axios.defaults.headers.common['Authorization'] = 'Bearer ' + token;
 	axios.defaults.headers.common['Accept-Language'] = user.locale;
 }

@@ -58,6 +58,13 @@ const en = {
     },
     section4: {
       title: {
+        line1: 'Check the compatibility',
+        line2: 'between your species',
+      },
+      subtitle: 'Anticipate any problem',
+    },
+    section5: {
+      title: {
         line1: 'Share your tank',
       },
       subtitle: 'Show the world your projects',
@@ -70,40 +77,40 @@ const en = {
     title: 'FAQ',
     questions: {
       1: {
-        question: 'How Accuarium app can help me?',
-        answer: 'No matter if you are planning a new project or trying to figure out what\'s wrong in your current aquarium, Accuarium provides the information you need to make your fish live happier. Find out the correct parameters for the species you chose and the perfect aquarium mates to avoid any problems or risks. All this helpful information will decrease your death rate to the minimum.',
+        question: 'How can accuarium app help me?',
+        answer: 'No matter if you\'re planning a new project or trying to figure out what\'s not working in your already set up aquarium, accuarium is your best companion in the world of aquariums. Anticipate problems and achieve a balanced aquarium; accuarium provides you with the information you need for your fish be happier. Discover the correct parameters, feeding, and behavior of the species you\'ve chosen, and find the perfect aquarium companions while avoiding fatal mistakes. Minimize mortality rates. Accuarium is super easy and intuitive to use - you\'ll see how fun it is.',
       },
       2: {
         question: 'Do I need any previous knowledge to get the most of Accuarium?',
-        answer: 'You can start using this Accuarium either if you are an amateur or you are a pro. One thing is sure, you will learn a lot just playing around with Accuarium.'
+        answer: 'Don\'t worry. You can start using Accuarium whether you\'re a beginner or a professional. accuarium is designed to be user-friendly for both newcomers and experienced individuals. Our intuitive interface makes it easy to navigate the app and access the information you need. Additionally, our database is constantly expanding, allowing you to discover new species, obtain detailed information about them, and explore combinations you may not have considered before. Rest assured, you\'ll definitely learn a lot while using accuarium.'
       },
       3: {
-        question: 'Is Accuarium free?',
-        answer: 'Yes, isnt\'t it wonderful?! But please don\'t be bothered if you find some adds in Accuarium. This helps us to keep this service online.'
+        question: 'Is accuarium free?',
+        answer: 'Yes, isn\'t it great?! But please, don\'t get upset if you come across advertisements in the app. In order to keep accuarium free, we occasionally display ads within the application. However, rest assured that we ensure the ads are non-intrusive and do not negatively impact your experience. We want you to have fun exploring and learning about the wonderful world of aquariums without any interruptions.'
       },
       4: {
-        question: 'Can I use Accuarium app to buy animals or plants?',
-        answer: 'No, accuarium doesn\'t provide such service.',
+        question: 'Can I use accuarium app to buy animals or plants?',
+        answer: 'No, accuarium does not offer that kind of service. However, we still want to remind you that when purchasing fish or plants, it\'s important to consider factors such as the health of the animals, ethical sourcing, and compatibility with the existing species in your aquarium.',
       },
       5: {
-        question: 'What kind of information should I expect from Accuarium?',
-        answer: 'Accuarium gathers information about thousands of species. Find out the ideal water conditions, the compatibility between diferent species or the intraspecific behavior. Learn if your tank is big enough or if its tenants are helping with the cleaning tasks.',
+        question: 'What kind of information should I expect from accuarium?',
+        answer: 'Accuarium specializes in helping you assess the compatibility between different species of fish and other aquatic animals. It provides detailed and concise information on hundreds of species. Find out details about their behavior, size, feeding habits, water preferences, and intraspecific behavior. Discover whether your tank is large enough or if its inhabitants assist with cleaning tasks.',
       },
       6: {
-        question: 'Is data in Accuarium reliable?',
-        answer: 'All information in this Accuarium has been verified by a zoologist specialized in the field.',
+        question: 'Is data in accuarium reliable?',
+        answer: 'We do our best to keep our database up to date and ensure that the information we provide is accurate at the time of inclusion. All information in accuarium has been verified by a zoologist specialized in the field. However, please note that as new studies and scientific advancements are made, new information may be discovered or recommendations regarding certain species or aquatic practices may be updated. Additionally, accuarium relies on a combination of reliable sources and the expertise of aquarists and aquarium experts. However, each aquarium is unique, and there may be variations in the behavior and needs of species due to individual factors. You may need to adapt the information to your specific situation. It is always recommended to conduct additional research and obtain multiple sources of information before making important decisions for your aquarium. Do not rely solely on accuarium but use it as a complementary tool to gain an overview. In summary, we strive to provide reliable information, but please be aware that no source is infallible.',
       },
       7: {
         question: 'Will I find the fish I\'m looking for?',
-        answer: 'You can find the species you are looking for by scientific or common name. Every species is classified by many common names if any. Take advantage the advance filters to find it. And if it\'s not there, just let us know! We\'ll appreciate any suggestion and you\'ll be contributing to make Accuarium better.',
+        answer: 'Our goal is to provide as many species as possible in accuarium. You can use the species search and advanced filters to look for the species you\'re interested in. You can search by their scientific name or common name. We have tried to include a wide range of common names, as each species may have different names depending on the region or even among enthusiasts. If you can\'t find the species you\'re looking for, please let us know! We greatly appreciate any suggestions, and you\'ll also be helping us improve accuarium.',
       },
       8: {
-        question: 'Is there any ilegal species in Accuarium?',
-        answer: 'Law changes in every country. There most certainly are ilegal species in your country.',
+        question: 'Is there any ilegal species in accuarium?',
+        answer: 'At Accuarium, we take compliance with the law very seriously and promote responsible practices in the field of aquarium keeping. The reason for the prohibition of a particular species in your country is likely due to environmental risks, conservation of threatened species, or public health and safety concerns. These restrictions and regulations aim to protect ecosystems, preserve biodiversity, and ensure the safety and well-being of people. Unfortunately, accuarium doesn\'t have a list of prohibited species in each country, and therefore, you may come across illegal species in your country. It\'s important to research and respect local laws and regulations to avoid legal consequences and protect ecological balance. Each country has its own regulations and lists of prohibited species, so it\'s essential to familiarize yourself with the specific regulations in your area before acquiring or keeping any species in your aquarium.',
       },
       9: {
         question: 'Is fishkeeping animal cruelty?',
-        answer: 'All animals in our homes, or their ancestry, have been subtracted from their natural habitat. From Accuarium we encourage people not to buy or get any wild animal or plant. In Accuarium you\'ll tagged every species that has probably been subtracted from nature. Fishkeeping instead is carrying out a wonderful task, many species habitat are in danger but aquariums are keeping all those species alive. Some species have been reintroduced to their original natural habitat thanks to fiskkeeping.',
+        answer: 'Fishkeeping itself is not inherently animal cruelty. Most aquarium hobbyists are animal lovers who deeply care about the well-being of the fish and other aquatic animals in their tanks. However, it\'s important to address this issue from an ethical perspective and ensure that proper care is provided to the aquatic animals in aquariums. accuarium helps aquarium hobbyists research and understand the specific needs of each species. A responsible aquarist should provide an appropriate environment and ensure comprehensive care for their animals. Additionally, it is crucial to avoid practices that cause harm or unnecessary suffering to the aquatic animals, such as overpopulation, irresponsible species selection, or mishandling of diseases. Ongoing education and seeking updated information on best aquarium practices are essential to ensure the well-being of the animals. Ultimately, ethical aquarium keeping is based on respect and responsible care for the aquatic animals, focusing on their welfare and quality of life. For this reason, at accuarium, we encourage not purchasing or acquiring wild animals or plants for your aquariums. You can find marked all the species that have likely been taken from the wild. By following ethical guidelines and providing a suitable environment, aquarium keeping can be an enriching and educational way to appreciate and learn about aquatic ecosystems, as well as participate in the conservation and protection of species. Ultimately, aquarium keeping is undertaking a meaningful task. The habitats of many species are endangered, and aquariums are conserving many of them. In some cases, the reintroduction of certain species to their original habitats possible was possible. All thanks to fishkeeping.',
       },
     },
   },

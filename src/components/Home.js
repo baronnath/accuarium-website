@@ -89,15 +89,15 @@ const Home = () => {
               </Box>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <Typography variant="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section3.title.line1')}<br/>{i18n.t('home.section3.title.line2')}</Typography>
-              <Typography variant="h6" component="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section3.subtitle')}</Typography>
+              <Typography variant="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section4.title.line1')}<br/>{i18n.t('home.section4.title.line2')}</Typography>
+              <Typography variant="h6" component="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section4.subtitle')}</Typography>
             </Grid>
           </Grid>
 
           <Grid container spacing={2} style={styles.sectionContainer} sx={{ marginTop:10 }}>
             <Grid item xs={12} sm={6} sx={{marginTop: {xs: 10, sm: 0, md: 30}}}>
-              <Typography variant="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section4.title.line1')}</Typography>
-              <Typography variant="h6" component="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section4.subtitle')}</Typography>
+              <Typography variant="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section5.title.line1')}</Typography>
+              <Typography variant="h6" component="h3" sx={{textAlign: {xs: 'center', sm: 'left'}}}>{i18n.t('home.section5.subtitle')}</Typography>
             </Grid>
             <Grid item xs={12} sm={6} sx={{marginTop: 5}} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', position:'relative', minHeight: '150px'}}>
               <Box style={styles.bgCircle} sx={{height: {xs:'30vw', sm:'30vw', md:'300px'}, width: {xs:'30vw', sm:'30vw', md:'300px'}}}></Box>
@@ -106,19 +106,19 @@ const Home = () => {
               </Box>
               <Icon
                 path={mdiHeart}
-                title={i18n.t('home.section4.title.line1')}
+                title={i18n.t('home.section5.title.line1')}
                 size={6}
                 style={{position:'absolute', left:'60%', top:'10%' }}
               />
               <Icon
                 path={mdiThumbUp}
-                title={i18n.t('home.section4.title.line1')}
+                title={i18n.t('home.section5.title.line1')}
                 size={4}
                 style={{position:'absolute', left:'30%', top:'-10%' }}
               />
               <Icon
                 path={mdiShareVariant}
-                title={i18n.t('home.section4.title.line1')}
+                title={i18n.t('home.section5.title.line1')}
                 size={12}
                 style={{position:'absolute', right:'30%', bottom:'-20%' }}
               />

@@ -11,8 +11,8 @@ const es = {
     subtitle: 'Comprueba la compatibilidad de las especies'
   },
   googlePlay: {
-    src: 'https://play.google.com/intl/en_us/badges/static/images/badges/es_badge_web_generic.png',
-    href: 'https://play.google.com/store/apps/details?id=com.spotify.tv.android&hl=es_419&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1',
+    src: 'https://play.google.com/intl/es_es/badges/static/images/badges/es_badge_web_generic.png',
+    href: 'https://play.google.com/store/apps/details?id=com.nathanlosabe.accuarium',
     alt: 'Disponible en Google Play',
   },
   menu: {
@@ -85,7 +85,7 @@ const es = {
         answer: 'No te preocupes. Puedes empezar a utilizar accuarium tanto si eres un novato o un profesional, accuarium está diseñada para ser amigable tanto para principiantes como para aquellos con experiencia. Nuestra interfaz intuitiva hace que sea fácil navegar por la aplicación y acceder a la información que necesitas. Además, nuestra base de datos está en constante crecimiento, y podrás descubrir nuevas especies, obtener información detallada sobre cada una y explorar combinaciones que quizás no habías considerado antes. Eso sí, seguro que aprenderás mucho utilizando accuarium.'
       },
       3: {
-        question: '¿Accuarium es gratis?',
+        question: '¿accuarium es gratis?',
         answer: 'Sí, ¡¿no es genial?! Pero por favor, no te enojes si encuentras anuncios en la app. Para mantener accuarium de forma gratuita, ocasionalmente mostramos anuncios dentro de la aplicación. Pero no te preocupes, nos aseguramos de que los anuncios no sean intrusivos y no afecten negativamente tu experiencia. Queremos que te diviertas explorando y aprendiendo sobre el maravilloso mundo de los acuarios sin interrupciones.'
       },
       4: {
@@ -97,7 +97,7 @@ const es = {
         answer: 'accuarium es especialista en ayudarte a evaluar la compatibilidad entre diferentes especies de peces y otros animales acuáticos. Recoge información detallada y esquemática de cientos de especies. Averigua detalles sobre su comportamiento, tamaño, alimentación, preferencias de agua y comportamiento intraespecífico. Descubre si tu tanque es lo suficientemente grande o si sus inquilinos ayudan con las tareas de limpieza.',
       },
       6: {
-        question: '¿Es fiable la información en Accuarium?',
+        question: '¿Es fiable la información en accuarium?',
         answer: 'Hacemos todo lo posible para mantener nuestra base de datos actualizada y asegurarnos de que la información que ofrecemos sea precisa en el momento de su inclusión. Toda la información en accuarium ha sido verificada por un zoólogo especializado en la materia. Sin embargo, ten en cuenta que medida que se realizan nuevos estudios y avances científicos, es posible que se descubran nuevas informaciones o se actualicen las recomendaciones sobre ciertas especies o prácticas acuáticas. Por otro lado, accuarium se basa en una combinación de fuentes confiables y la experiencia de acuaristas y expertos en acuariofilia. Sin embargo, cada acuario es único y pueden existir variaciones en el comportamiento y las necesidades de las especies debido a factores individuales. Es posible que debas adaptar la información a tu situación específica. Siempre es recomendable realizar una investigación adicional y obtener múltiples fuentes de información antes de tomar decisiones importantes para tu acuario. No confíes únicamente en accuarium, sino que utilízalo como una herramienta complementaria para obtener una visión general. En resumen, nos esforzamos por proporcionar información fiable, pero ten en cuenta que ninguna fuente es infalible.',
       },
       7: {
@@ -105,7 +105,7 @@ const es = {
         answer: 'Nuestro objetivo es proporcionar la mayor cantidad posible de especies en accuarium. Puedes hacer uso del buscador de especies y los filtros avanzados para buscar la especie. También podrás encontrarla por el nombre científico o el nombre común. Hemos intentado recoger el mayor número posible de nombres comunes, cada especie recibe muchos nombres muy distintos según en qué parte del mundo te encuentres o incluso según con qué aficonado hables. Si no encuentras la especie que estás buscando, ¡háznoslo saber! Siempre agredecemos enormemente cualquier sugerencia y además estarás contribuyendo a mejorar accuarium.',
       },
       8: {
-        question: '¿Hay especies ilegales en Accuarium?',
+        question: '¿Hay especies ilegales en accuarium?',
         answer: 'En accuarium nos tomamos muy en serio el cumplimiento de la ley y promovemos prácticas responsables en la acuariofilia. La razón de la prohibición de una especie en particular en tu país es probablemente debido a un riesgo medioambiental, la conservación de especies amenazadas o un riesgo para salud publica y seguridad. Estas restricciones y regulaciones tienen como objetivo proteger los ecosistemas, preservar la biodiversidad y garantizar la seguridad y el bienestar de las personas. Lamentablemente, accuarium no cuenta con una lista de especies prohibidas en cada país y, por lo tanto, es probable que encuentras especies ilegales en tu país. Es importante investigar y respetar las leyes y regulaciones locales para evitar consecuencias legales y proteger el equilibrio ecológico. Cada país tiene sus propias normativas y listas de especies prohibidas, por lo que es esencial familiarizarse con las regulaciones específicas en tu área antes de adquirir o mantener cualquier especie en tu acuario.',
       },
       9: {

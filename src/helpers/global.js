@@ -28,3 +28,7 @@ export function useWindowDimensions() {
 
   return windowDimensions;
 }
+
+export function gAnalyticsEvent(event) {
+  return window.dataLayer.push({'event': event});
+}

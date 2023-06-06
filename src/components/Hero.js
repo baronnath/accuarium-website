@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Box, Button, Typography } from '@mui/material';
 import heroVideo from '../assets/video/pexels-water-bg.mp4';
 import { useTheme } from '@mui/material/styles';
-import { useWindowDimensions } from '../helpers/global';
+import { useWindowDimensions, gAnalyticsEvent } from '../helpers/global';
 import Subscribe from './Subscribe';
 import translator from '../translator/translator';
 import theme, { colors } from '../theme';
@@ -34,22 +34,22 @@ const Hero = () => {
           color="#fff"
           sx={styles.textContainer}
         >
-          {/* <Typography variant="h3" component="h1" style={styles.title}>
+          <Typography variant="h3" component="h1" style={styles.title}>
             {i18n.t('hero.title')}
           </Typography>
           <Typography variant="h6" component="h3" style={styles.subtitle}>
             {i18n.t('hero.subtitle')}
           </Typography>
           <Box sx={styles.downloadButtonContainer}>
-            <a href={i18n.t('googlePlay.href')}>
+            <a onClick={() => gAnalyticsEvent('playStore-click')}>
               <img style={styles.downloadButton} alt={i18n.t('googlePlay.alt')} src={i18n.t('googlePlay.src')}/>
             </a>
-          </Box> */}
+          </Box>
 
-          <Typography variant="h3" component="h1" style={styles.title}>
+          {/*<Typography variant="h3" component="h1" style={styles.title}>
             {i18n.t('prelaunch.hero.title')}
           </Typography>
-          <Subscribe/>
+          <Subscribe/>*/}
         </Box>
       </div>
     </section>

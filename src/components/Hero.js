@@ -41,7 +41,7 @@ const Hero = () => {
             {i18n.t('hero.subtitle')}
           </Typography>
           <Box sx={styles.downloadButtonContainer}>
-            <a onClick={() => gAnalyticsEvent('playStore-click')}>
+            <a href={i18n.t('googlePlay.href')} onClick={() => gAnalyticsEvent('playStoreClick')}>
               <img style={styles.downloadButton} alt={i18n.t('googlePlay.alt')} src={i18n.t('googlePlay.src')}/>
             </a>
           </Box>

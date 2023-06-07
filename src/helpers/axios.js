@@ -103,6 +103,25 @@ export class Api {
 	}
 
 
+	// User
+
+	static getUser(id) {
+		return this._getUser({userId: id});
+	}
+
+	static getUserByEmail(email) {
+		return this._getUser({email: email});
+	}
+
+	static _getUser(params) {
+		return axios.get(backend.url + '/user', {params: params});
+	}
+
+	getUsers() {
+		return axios.get(backend.url + '/users');
+	}
+
+
   // Leads
 
   static createLead(params) {

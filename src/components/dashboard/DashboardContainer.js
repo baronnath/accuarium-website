@@ -5,7 +5,7 @@ import {
   Container } from '@mui/material';
 import translator from '../../translator/translator';
 
-function DashboardConteniner({ children}) {
+function DashboardContainer({ children}) {
   const i18n = translator();
   
   return (
@@ -31,4 +31,4 @@ function DashboardConteniner({ children}) {
   );
 }
 
-export default DashboardConteniner;
+export default DashboardContainer;

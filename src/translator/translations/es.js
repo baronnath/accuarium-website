@@ -181,6 +181,10 @@ const es = {
     title: 'Gracias por suscrbiirte',
     subtitle: 'Te mantendremos informado!',
     description: 'Recibirás un email con la invitación tan pronto como la version veta esté disponible',
+  },
+  redirect: {
+    redirecting: 'Redireccionando...',
+    openApp: 'Abrir app',
   }
 };
 

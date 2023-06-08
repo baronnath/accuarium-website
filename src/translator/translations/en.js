@@ -181,6 +181,10 @@ const en = {
     title: 'Thank you for subscribing',
     subtitle: 'We\'ll keep you posted!',
     description: 'You\'ll receive an invitation email as soon as the early access is available',
+  },
+  redirect: {
+    redirecting: 'Redirecting...',
+    openApp: 'Open app',
   }
 }
 

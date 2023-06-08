@@ -5,7 +5,8 @@ import {
   Route,
   Outlet,
   Navigate,
-  useLocation
+  useLocation,
+  useParams,
 } from "react-router-dom";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import theme from './theme';
@@ -30,6 +31,8 @@ import PrivacyPolicy from './components/legal/PrivacyPolicy';
 import CookiesPolicy from './components/legal/CookiesPolicy';
 import LegalNotice from './components/legal/LegalNotice';
 import Terms from './components/legal/Terms';
+
+import Redirect from './components/app/Redirect';
 
 import translator from './translator/translator';
 
@@ -70,6 +73,17 @@ function App() {
     return children;
   };
 
+  const RedirectComponent = () => {
+    const { screen, id } = useParams(); // Retrieve the params in URL
+    const redirectUrl = `accua://${screen}/${id}`; // Generate app URL
+
+    window.location.href = redirectUrl;
+
+    return (
+      <Redirect url={redirectUrl}/>
+    );
+  };
+
   return (
     <Router>
       <ThemeProvider theme={createTheme(theme)}>
@@ -91,6 +105,8 @@ function App() {
             <Route path="permissions" element={<DashboardRoute><Permissions /></DashboardRoute>} />
             <Route path="file-upload" element={<DashboardRoute><FileUpload /></DashboardRoute>} />
           </Route>
+          {/*Redirect to app*/}
+          <Route exact path="app/:screen/:id" element={<RedirectComponent/>} />
         </Routes>
       </ThemeProvider>
     </Router>

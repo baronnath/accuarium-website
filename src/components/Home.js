@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import { Typography, Box } from '@mui/material';
 import Hero from './Hero';
-import TwitterFeed from './TwitterFeed';
+import MastodonFeed from './MastodonFeed';
 import FAQ from './FAQ';
 import Icon from '@mdi/react';
 import { mdiShieldStarOutline, mdiMicroscope, mdiEarth, mdiHeart, mdiThumbUp, mdiShareVariant } from '@mdi/js';
@@ -133,7 +133,7 @@ const Home = () => {
           id="sectionNews"
           sx={{ marginTop:20 }}
         >
-          <TwitterFeed/>
+          <MastodonFeed/>
         </Box>
         <Box
           style={styles.section}

@@ -34,10 +34,10 @@ const Hero = () => {
           color="#fff"
           sx={styles.textContainer}
         >
-          <Typography variant="h3" component="h1" style={styles.title}>
+          <Typography variant="h3" component="h1" sx={styles.title}>
             {i18n.t('hero.title')}
           </Typography>
-          <Typography variant="h6" component="h3" style={styles.subtitle}>
+          <Typography variant="h6" component="h3" sx={styles.subtitle}>
             {i18n.t('hero.subtitle')}
           </Typography>
           <Box sx={styles.downloadButtonContainer}>
@@ -78,20 +78,23 @@ const styles = {
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
   title: {
-    // paddingBottom: theme.spacing(4),
+    textAlign: {xs: 'left', sm:'center'},
+    width: '100%',
   },
   subtitle: {
-    marginBottom: 20,
-    color: colors.white,
-    paddingLeft: '20%',
-    paddingRight: '20%',
+    textAlign: {xs: 'left', sm:'center'},
+    width: '100%',
+    marginBottom: {md:20},
+    paddingLeft: {md:'20%'},
+    paddingRight: {md:'20%'},
   },
   textContainer: {
     textAlign: 'left',
     px: 5,
   },
   downloadButtonContainer: {
-    width: {xs: '50%', sm:'30%', md:'20%'},
+    width: {xs: '80%', sm:'30%', xl:'15%'},
+    alignSelf: {xs:'start', sm:'center'}
   },
   downloadButton: {
     maxWidth: '100%',

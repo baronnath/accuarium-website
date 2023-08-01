@@ -23,6 +23,7 @@ const es = {
     home: 'Inicio',
     subscribe: 'Suscripción',
     press: 'Prensa',
+    blog: 'Blog',
   },
   home: {
     section1: {
@@ -185,6 +186,11 @@ const es = {
   redirect: {
     redirecting: 'Redireccionando...',
     openApp: 'Abrir app',
+  },
+  blog: {
+    blog: 'Elige bien',
+    share: 'Compatir',
+    readMore: 'Leer más',
   }
 };
 

@@ -15,6 +15,8 @@ import Box from '@mui/material/Box';
 
 import NavBar from './components/NavBar';
 import Home from './components/Home';
+import Blog from './components/blog/Blog';
+import Post from './components/blog/Post';
 import Press from './components/Press';
 import Subscribe from './components/Subscribe';
 import Footer from './components/Footer';
@@ -91,6 +93,8 @@ function App() {
         <Routes>
           <Route path="" element={<FrontTemplate />}>
             <Route path="/" element={<Home />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="post/:slug" element={<Post />} />
             <Route path="press" element={<Press />} />
             <Route path="thankyou" element={<ThankYou />} />
 

@@ -24,6 +24,13 @@ const Login = () => {
   const i18n = translator();
   const navigate = useNavigate();
 
+  const user = {
+    locale: i18n.locale,
+    accessToken: null,
+  }
+
+  const api = new Api(user);
+
   const [alert, setAlert] = useState({
     message: null,
     type: null,
@@ -38,7 +45,7 @@ const Login = () => {
       password: data.get('password'),
     };
 
-  Api.login(params)
+  api.login(params)
     .then(async(res) => {
       setAlert(prevAlert => ({
         ...prevAlert,

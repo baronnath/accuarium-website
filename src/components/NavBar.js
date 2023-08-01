@@ -32,6 +32,10 @@ const webPages = [{
     ref: '/',
   },
   { 
+    label: i18n.t('menu.blog'),
+    ref: '/blog',
+  },
+  { 
     label: i18n.t('menu.press'),
     ref: '/press',
   }];

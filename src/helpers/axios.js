@@ -24,21 +24,23 @@ export const setHeaders = async (user) => {
 	}
 
 	const token = user.accessToken;
-	axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
-	axios.defaults.headers.common['Authorization'] = 'Bearer ' + token;
+	if (token) {
+		axios.defaults.headers.common['Authorization'] = 'Bearer ' + token;
+	}
+	// axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 	axios.defaults.headers.common['Accept-Language'] = user.locale;
 }
 
 export class Api {
 
 	// headers must be set every call as it's deleted after page load
-	constructor() {
-    setHeaders();
+	constructor(user = null) {
+    setHeaders(user);
   }
 
 	// Login
 
-	static login(params){
+	login(params){
 		return axios.post(backend.url + '/user/login', params);
 	}
 
@@ -129,5 +131,12 @@ export class Api {
   }
 
 
+  ////////////
+  /// BLOG ///
+  ////////////
+
+  getPosts(params = {}) {
+  	return axios.get(backend.blog + '/wp/v2/posts?_embed', params);
+  }
 
 }

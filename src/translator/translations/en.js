@@ -191,6 +191,10 @@ const en = {
     blog: 'Choose wisely',
     share: 'Share',
     readMore: 'Read more',
+  },
+  share: {
+    copyLink: 'Copy link',
+    emailBody: 'Check this accuarium post:',
   }
 }
 

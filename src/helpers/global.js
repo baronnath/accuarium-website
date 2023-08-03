@@ -32,3 +32,12 @@ export function useWindowDimensions() {
 export function gAnalyticsEvent(event) {
   return window.dataLayer.push({'event': event});
 }
+
+export function getDeviceType() {
+  const platform = navigator.platform;
+  const device = /iphone|ipad|ipod|android|webos|blackberry|windows phone/.test(platform)
+    ? "mobile"
+    : "desktop";
+    
+  return device;
+}

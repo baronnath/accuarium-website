@@ -6,8 +6,6 @@ import Stack from '@mui/material/Stack';
 
 const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
 
-	console.log(currentPage, totalPages)
-
 	const handleChange = ( e, page ) => {
 		setCurrentPage(page);
 	};

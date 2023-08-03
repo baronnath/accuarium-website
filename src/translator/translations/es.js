@@ -191,6 +191,10 @@ const es = {
     blog: 'Elige bien',
     share: 'Compatir',
     readMore: 'Leer más',
+  },
+  share: {
+    copyLink: 'Copiar enlace',
+    emailBody: 'Echa un vistazo a esta publicación de accuarium:',
   }
 };
 

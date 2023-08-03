@@ -6,6 +6,7 @@ import Legal from './Legal';
 
 const routes = [
   { label: "Home", ref: "/" },
+  { label: "Blog", ref: "/blog" },
   { label: "Press", ref: "/press" },
   // { name: "path name", link: "link url" }, like this
 ];

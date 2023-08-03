@@ -9,6 +9,7 @@ import {
   CircularProgress
 } from '@mui/material';
 import Alert from '../Alert';
+import Share from './Share';
 import Spinner from '../app/Spinner';
 import translator from '../../translator/translator';
 import { Api } from '../../helpers/axios';
@@ -27,6 +28,8 @@ const Post = () => {
 
   const [isLoading, setLoading] = useState(true);
   const [post, setPost] = useState([]);
+  const [share, setShare] = useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
   const [alert, setAlert] = useState({
     message: null,
     type: null,
@@ -49,6 +52,11 @@ const Post = () => {
         handleError(err);
       });
   },[]);
+
+  const handleShare = (e) => {
+    setAnchorEl(e.currentTarget);
+    setShare(true);
+  }
 
   function handleError(err) {
     setAlert(prevAlert => ({
@@ -95,6 +103,19 @@ const Post = () => {
               </section>
               <Container sx={{ marginTop:5 }} maxWidth="sm">
                 <Box dangerouslySetInnerHTML={{ __html: sanitize(post.content.rendered) }}>
+                </Box>
+                <Box sx={{ display: "flex", justifyContent: "center"}}>
+                  <Button
+                    variant="outlined"
+                    sx={{marginTop: 3}}
+                    fullWidth={true}
+                    size="small"
+                    aria-describedby={"share"}
+                    onClick={handleShare}
+                  >
+                    {i18n.t("blog.share")}
+                  </Button>
+                  <Share id="share" isOpen={share} onClose={setShare} anchorEl={anchorEl} post={post} position="center" />
                 </Box>
               </Container>
             </>

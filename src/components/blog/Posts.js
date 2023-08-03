@@ -12,6 +12,7 @@ import {
   Typography
 } from '@mui/material';
 import Pagination from './Pagination';
+import Share from './Share';
 import Alert from '../Alert';
 import Spinner from '../app/Spinner';
 import translator from '../../translator/translator';
@@ -29,9 +30,11 @@ const Posts = () => {
   const api = new Api(user);
 
   const [isLoading, setLoading] = useState(true);
-  const [totalPages, setTotalPages] = useState( 1 );
+  const [totalPages, setTotalPages] = useState(1);
   const [posts, setPosts] = useState([]);
-  const [currentPage, setCurrentPage] = useState( 1 );
+  const [currentPage, setCurrentPage] = useState(1);
+  const [share, setShare] = useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
   const [alert, setAlert] = useState({
     message: null,
     type: null,
@@ -69,6 +72,11 @@ const Posts = () => {
     }));   
   }
 
+  const handleShare = (e) => {
+    setAnchorEl(e.currentTarget);
+    setShare(true);
+  }
+
   return (
     <>
       { posts.length ? (
@@ -94,7 +102,15 @@ const Posts = () => {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">{i18n.t('blog.share')}</Button>
+                    <Button
+                      size="small"
+                      aria-describedby={"share"}
+                      variant="contained"
+                      onClick={handleShare}
+                    >
+                      {i18n.t('blog.share')}
+                    </Button>
+                    <Share id="share" isOpen={share} onClose={setShare} anchorEl={anchorEl} post={post}/>
                     <Button size="small">
                       <Link to={`/post/${post.slug}`} className="btn btn-secondary float-right" style={{ textDecoration: 'none', color: colors.primary }}>
                         {i18n.t('blog.readMore')}

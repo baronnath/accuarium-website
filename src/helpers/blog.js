@@ -86,5 +86,21 @@ export const createPaginationArray = ( currentPage, totalPages ) => {
  * @return {string} Sanitized string
  */
 export const sanitize = (content) => {
-	return DOMPurify.sanitize(content);
+
+	// Add style to YouTube iframe
+	DOMPurify.addHook('afterSanitizeAttributes', function (node) {
+		if(node.tagName == 'FIGURE'){ // YouTube video container
+			if(node.classList.contains('wp-block-embed-youtube')){
+				node.style.margin = '0 0 1em';
+				node.style.paddingTop = '20px';
+			}
+		}
+
+		if(node.tagName == 'IFRAME') {
+			node.allowFullscreen = true;
+			node.style.width = '100%';
+		}
+	});
+
+	return DOMPurify.sanitize(content, {ADD_TAGS: ['iframe']});
 }

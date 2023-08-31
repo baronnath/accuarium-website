@@ -92,8 +92,7 @@ const Post = () => {
                     color="#fff"
                     sx={styles.textContainer}
                   >
-                    <Typography variant="h2" component="h1" sx={styles.title}>
-                      {post.title.rendered}
+                    <Typography variant="h2" component="h1" sx={styles.title} dangerouslySetInnerHTML={{ __html: sanitize(post.title.rendered) }}>
                     </Typography>
                     {/*<Typography variant="h6" component="h3" sx={styles.subtitle}>
                       {i18n.t('hero.subtitle')}

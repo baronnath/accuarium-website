@@ -18,6 +18,7 @@ import Spinner from '../app/Spinner';
 import translator from '../../translator/translator';
 import { Api } from '../../helpers/axios';
 import { colors } from '../../theme';
+import { sanitize } from '../../helpers/blog';
 import config from '../../config/app';
 
 const Posts = () => {
@@ -94,8 +95,7 @@ const Posts = () => {
                   </Link>
                   <CardContent>
                     <Link to={`/post/${post.slug}`} className="btn btn-secondary float-right" style={{ textDecoration: 'none', color: "#fff" }}>
-                      <Typography gutterBottom variant="h3" component="h2">
-                        {post.title.rendered}
+                      <Typography gutterBottom variant="h3" component="h2" dangerouslySetInnerHTML={{ __html: sanitize(post.title.rendered) }}>
                       </Typography>
                     </Link>
                     <Typography variant="body2" color="text.secondary" dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}>

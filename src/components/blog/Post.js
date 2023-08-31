@@ -101,7 +101,7 @@ const Post = () => {
                 </div>
               </section>
               <Container sx={{ marginTop:5 }} maxWidth="sm">
-                <Box dangerouslySetInnerHTML={{ __html: sanitize(post.content.rendered) }}>
+                <Box dangerouslySetInnerHTML={{ __html: sanitize(post.content.rendered.replace(/<a /g, `<a style="${styles.a}"`)) }}>
                 </Box>
                 <Box sx={{ display: "flex", justifyContent: "center"}}>
                   <Button
@@ -114,7 +114,7 @@ const Post = () => {
                   >
                     {i18n.t("blog.share")}
                   </Button>
-                  <Share id="share" isOpen={share} onClose={setShare} anchorEl={anchorEl} post={post} position="center" />
+                  <Share id={`share-${post.slug}`} isOpen={share} onClose={setShare} anchorEl={anchorEl} post={post} position="center" />
                 </Box>
               </Container>
             </>
@@ -174,5 +174,6 @@ const styles = {
   callToAction: {
     fontWeight: 'bold',
     color: colors.white,
-  }
+  },
+  a: `color: ${colors.primary}; text-decoration: none;`
 }

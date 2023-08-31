@@ -69,7 +69,7 @@ const Share = ({ id, isOpen, onClose, anchorEl, post, position = 'left' }) => {
 	return (
 		<Popover
 		  id={id}
-		  open={isOpen}
+		  open={isOpen == post.slug}
 		  onClose={() => onClose(false)}
 		  anchorEl={anchorEl}
 		  anchorOrigin={{
@@ -84,7 +84,7 @@ const Share = ({ id, isOpen, onClose, anchorEl, post, position = 'left' }) => {
       <List dense={true}>
       	<ListItem
           button
-          id="whatsapp"
+          id={id + "-whatsapp"}
           onClick={() => handleShare("whatsapp")}
         >
           <ListItemIcon>
@@ -94,7 +94,7 @@ const Share = ({ id, isOpen, onClose, anchorEl, post, position = 'left' }) => {
         </ListItem>
         <ListItem
           button
-          id="facebook"
+          id={id + "-facebook"}
           onClick={() => handleShare("facebook")}
         >
           <ListItemIcon>
@@ -104,7 +104,7 @@ const Share = ({ id, isOpen, onClose, anchorEl, post, position = 'left' }) => {
         </ListItem>
        	<ListItem
           button
-          id="twitter"
+          id={id + "-twitter"}
           onClick={() => handleShare("twitter")}
         >
           <ListItemIcon>
@@ -114,7 +114,7 @@ const Share = ({ id, isOpen, onClose, anchorEl, post, position = 'left' }) => {
         </ListItem>
         <ListItem
           button
-          id="email"
+          id={id + "-email"}
           onClick={() => handleShare("email")}
         >
           <ListItemIcon>
@@ -124,7 +124,7 @@ const Share = ({ id, isOpen, onClose, anchorEl, post, position = 'left' }) => {
         </ListItem>
        <ListItem
           button
-          id="copy"
+          id={id + "-copy"}
           onClick={() => handleShare("copy")}
         >
           <ListItemIcon>

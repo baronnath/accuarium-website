@@ -73,9 +73,9 @@ const Posts = () => {
     }));   
   }
 
-  const handleShare = (e) => {
+  const handleShare = (e, slug) => {
     setAnchorEl(e.currentTarget);
-    setShare(true);
+    setShare(slug);
   }
 
   return (
@@ -106,11 +106,11 @@ const Posts = () => {
                       size="small"
                       aria-describedby={"share"}
                       variant="contained"
-                      onClick={handleShare}
+                      onClick={(e) => handleShare(e, post.slug)}
                     >
                       {i18n.t('blog.share')}
                     </Button>
-                    <Share id="share" isOpen={share} onClose={setShare} anchorEl={anchorEl} post={post}/>
+                    <Share id={`share-${post.slug}`} isOpen={share} onClose={setShare} anchorEl={anchorEl} post={post}/>
                     <Button size="small">
                       <Link to={`/post/${post.slug}`} className="btn btn-secondary float-right" style={{ textDecoration: 'none', color: colors.primary }}>
                         {i18n.t('blog.readMore')}

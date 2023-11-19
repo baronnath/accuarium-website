@@ -150,6 +150,7 @@ const styles = {
   },
   title: {
     textAlign: {xs: 'left', sm:'center'},
+    fontSize: {xs: 35, sm: 60},
     width: '100%',
   },
   subtitle: {

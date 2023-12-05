@@ -21,6 +21,7 @@ import Press from './components/Press';
 import Subscribe from './components/Subscribe';
 import Footer from './components/Footer';
 import ThankYou from './components/ThankYou';
+import DeleteAccount from './components/DeleteAccount';
 
 import Login from './components/dashboard/Login';
 import DashboardContainer from './components/dashboard/DashboardContainer';
@@ -102,6 +103,8 @@ function App() {
             <Route path="cookies-policy" element={<CookiesPolicy />} />
             <Route path="legal-notice" element={<LegalNotice />} />
             <Route path="terms-and-conditions" element={<Terms />} />
+
+            <Route path="delete-account" element={<DeleteAccount />} />
           </Route>
           <Route path="login" element={<Login />} />
           <Route path="dashboard" element={<DashboardTemplate />}>
@@ -110,7 +113,7 @@ function App() {
             <Route path="file-upload" element={<DashboardRoute><FileUpload /></DashboardRoute>} />
           </Route>
           {/*Redirect to app*/}
-          <Route exact path="app/:screen/:id" element={<RedirectComponent/>} />
+          <Route exact path="app/:screen/:id?" element={<RedirectComponent/>} />
         </Routes>
       </ThemeProvider>
     </Router>

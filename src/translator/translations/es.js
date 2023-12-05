@@ -187,6 +187,12 @@ const es = {
     redirecting: 'Redireccionando...',
     openApp: 'Abrir app',
   },
+  deleteAccount: {
+    title: 'Nos da mucha que te vayas',
+    subtitle: '¡Esto es irreversible!',
+    description: 'Tu cuenta y toda tu información personal serán eliminadas. Tendrás que borrarla desde el apartado de perfil en la app móvil.',
+    submit: 'Delete account',
+  },
   blog: {
     blog: 'Elige bien',
     share: 'Compatir',

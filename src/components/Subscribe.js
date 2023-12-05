@@ -66,9 +66,7 @@ const Subscribe = () => {
   }
 
   function handleSubmit() {
-    console.log('subscriber',subscriber);
     const validation = validator(subscriber);
-    console.log('validation',validation);
     
     if (validation !== false) {
       setSubscriber(prevSubscriber => ({

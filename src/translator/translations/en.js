@@ -187,6 +187,12 @@ const en = {
     redirecting: 'Redirecting...',
     openApp: 'Open app',
   },
+  deleteAccount: {
+    title: 'We\'re so sad to see you leave',
+    subtitle: 'This action can\'t be undone!',
+    description: 'Your account and all your personal information we\'ll be deleted. You\'ll have to delete it from the the profile tab on the app.',
+    submit: 'Delete account',
+  },
   blog: {
     blog: 'Choose wisely',
     share: 'Share',

@@ -7,8 +7,6 @@ import Container from '@mui/material/Container';
 import { colors } from '../theme';
 import translator from '../translator/translator';
 
-import Social from './Social';
-
 const DeleteAccount = () => {
 
   const i18n = translator();
@@ -30,7 +28,7 @@ const DeleteAccount = () => {
           {i18n.t('deleteAccount.title')}
         </Typography>
         
-        <Typography style={styles.fullWidth}>
+        <Typography>
           {i18n.t('deleteAccount.description')}
         </Typography>
         <Typography variant="h6" component="h2" style={{...styles.fullWidth, ...styles.subtitle}}>
@@ -40,8 +38,6 @@ const DeleteAccount = () => {
           {i18n.t('deleteAccount.submit')}
         </Button>
       </Box>
-
-      <Social color={colors.white} align={'left'} style={styles.social}/>
     </Container>
   );
 };
@@ -52,9 +48,6 @@ const styles = {
   overlay: {
     width: '100vw',
     height: '100vh',
-  },
-  fullWidth: {
-    // width: '100%', 
   },
   title: {
     marginBottom: 50,
@@ -68,9 +61,6 @@ const styles = {
     px: 5,
   },
   callToAction: {
-    marginTop: 20,
+    marginTop: 30,
   },
-  social: {
-    marginTop: 20,
-  }
 }

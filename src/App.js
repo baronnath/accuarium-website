@@ -36,6 +36,7 @@ import LegalNotice from './components/legal/LegalNotice';
 import Terms from './components/legal/Terms';
 
 import Redirect from './components/app/Redirect';
+import NotFound from './components/app/NotFound';
 
 import translator from './translator/translator';
 
@@ -114,6 +115,8 @@ function App() {
           </Route>
           {/*Redirect to app*/}
           <Route exact path="app/:screen/:id?" element={<RedirectComponent/>} />
+          {/*404*/}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </ThemeProvider>
     </Router>

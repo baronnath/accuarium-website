@@ -201,7 +201,12 @@ const en = {
   share: {
     copyLink: 'Copy link',
     emailBody: 'Check this accuarium post:',
-  }
+  },
+  notFound: {
+    title: 'Page not found',
+    description: 'The page you are looking for doesn´t exist or has been removed.',
+    callToAction: 'Go back',
+  },
 }
 
 export default en;

@@ -1,5 +1,6 @@
 import React, {useState, useEffect } from 'react';
 import { Link, useParams } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import {
   Container,
   Box,
@@ -20,6 +21,7 @@ const Post = () => {
 
   const params = useParams();
   const i18n = translator();
+  const navigate = useNavigate();
   const user = {
     locale: i18n.locale,
     accessToken: null
@@ -43,7 +45,7 @@ const Post = () => {
           setPost(res.data[0]);
           console.warn(res.data[0]);
         } else {
-          handleError(i18n.t('blog.noPosts'));
+          handleError(navigate('/404-not-found'));
         }
         setLoading(false);
       })

@@ -201,7 +201,12 @@ const es = {
   share: {
     copyLink: 'Copiar enlace',
     emailBody: 'Echa un vistazo a esta publicación de accuarium:',
-  }
+  },
+  notFound: {
+    title: 'Página no encontrada',
+    description: 'La página que estás buscando no existe o ha sido eliminada.',
+    callToAction: 'Volver',
+  },
 };
 
 export default es;

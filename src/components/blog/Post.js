@@ -53,9 +53,9 @@ const Post = () => {
       });
   },[]);
 
-  const handleShare = (e) => {
+  const handleShare = (e, slug) => {
     setAnchorEl(e.currentTarget);
-    setShare(true);
+    setShare(slug);
   }
 
   function handleError(err) {
@@ -92,7 +92,7 @@ const Post = () => {
                     color="#fff"
                     sx={styles.textContainer}
                   >
-                    <Typography variant="h2" component="h1" sx={styles.title} dangerouslySetInnerHTML={{ __html: sanitize(post.title.rendered) }}>
+                    <Typography variant="h2" component="h1" maxWidth="sm" sx={styles.title} dangerouslySetInnerHTML={{ __html: sanitize(post.title.rendered) }}>
                     </Typography>
                     {/*<Typography variant="h6" component="h3" sx={styles.subtitle}>
                       {i18n.t('hero.subtitle')}
@@ -110,7 +110,7 @@ const Post = () => {
                     fullWidth={true}
                     size="small"
                     aria-describedby={"share"}
-                    onClick={handleShare}
+                    onClick={(e) => handleShare(e, post.slug)}
                   >
                     {i18n.t("blog.share")}
                   </Button>

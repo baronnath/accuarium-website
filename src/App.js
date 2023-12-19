@@ -17,6 +17,8 @@ import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Blog from './components/blog/Blog';
 import Post from './components/blog/Post';
+import SearchSpecies from './components/species/SearchSpecies';
+import Species from './components/species/Species';
 import Press from './components/Press';
 import Subscribe from './components/Subscribe';
 import Footer from './components/Footer';
@@ -97,6 +99,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="blog" element={<Blog />} />
             <Route path="post/:slug" element={<Post />} />
+            <Route path="species/:slug" element={<Species />} />
+            <Route path="species" element={<SearchSpecies />} />
             <Route path="press" element={<Press />} />
             <Route path="thankyou" element={<ThankYou />} />
 

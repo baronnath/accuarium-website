@@ -60,14 +60,38 @@ export class Api {
 
 
 	// Species
-
-	static getSpeciesById(speciesId) {
+	getSpeciesById(speciesId) {
 		let params = {speciesId: speciesId};
 		return this._getSpecies(params);
 	}
 
-	static _getSpecies(params) {
+	getSpeciesByName(scientificName) {
+		let params = {
+			scientificName: scientificName
+		};
+		return this._getSpecies(params);
+	}
+
+	getAllSpecies() {
+		let params = {};
+		return this._getSpecies(params);
+	}
+
+	_getSpecies(params) {
 		return axios.get(backend.url + '/species', {params: params});
+	}
+
+	speciesSearch(page = 0, query) {
+		let params = {
+      sort: 'name',
+      direction: 'ascending',
+      page: page,
+    }
+
+    if(!!query)
+      params['keyword'] = query;
+
+		return axios.get(backend.url + '/species/search', {params: params})
 	}
 
 	// data is a FormData instaca.

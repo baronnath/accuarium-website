@@ -1,4 +1,7 @@
 const en = {
+  general: {
+    close: 'Close',
+  },
   prelaunch: {
     hero: {
       title: 'Create your own balanced tank',
@@ -24,6 +27,7 @@ const en = {
     subscribe: 'Subscribe',
     press: 'Press',
     blog: 'Blog',
+    species: 'Fish',
   },
   home: {
     section1: {
@@ -200,12 +204,143 @@ const en = {
   },
   share: {
     copyLink: 'Copy link',
-    emailBody: 'Check this accuarium post:',
+    post: {
+      emailBody: 'Check this accuarium post:',
+    },
+    species: {
+      emailBody: 'Check this fish species in accuarium:',
+    },
   },
   notFound: {
     title: 'Page not found',
     description: 'The page you are looking for doesn´t exist or has been removed.',
     callToAction: 'Go back',
+  },
+  measures: {
+    ppm: 'Parts per million',
+    ppmAbbr: 'ppm',
+    mg: 'Milligrams',
+    mgAbbr: 'mg',
+    µS: 'Microsiemens ',
+    µSAbbr: 'µS',
+    gH: 'Degrees',
+    gHAbbr: 'dGH',
+    kH: 'Degrees',
+    kHAbbr: 'dKH',
+    liter: 'Liters',
+    literAbbr: 'L',
+    m3: 'Square meters',
+    m3Abbr: 'm³',
+    gallon: 'Gallons',
+    gallonAbbr: 'gal',
+    ounce: 'Ounces',
+    ounceAbbr: 'oz',
+    cm: 'Centimeters',
+    cmAbbr: 'cm',
+    m: 'Meters',
+    mAbbr: 'm',
+    mm: 'Millimeters',
+    mmAbbr: 'mm',
+    in: 'Inches',
+    inAbbr: 'in',
+    ft: 'Feet',
+    ftAbbr: 'ft',
+    celsius: 'Celsius degrees',
+    celsiusAbbr: 'ºC',
+    fahrenheit: 'Fahrenheit degrees',
+    fahrenheitAbbr: 'ºF',
+    kelvin: 'Kelvin degrees',
+    kelvinAbbr: 'ºK',
+    measureNotFound: 'The measure was not found',
+    unitNotFound: 'The unit was not found',
+  },
+  species: {
+    size: 'Size',
+    minTank: 'Min. tank volume',
+    feed: {
+      one: 'Feeding',
+    },
+    swimArea: 'Swimmming area',
+    temperature: 'Temperature',
+    ph: 'pH',
+    gh: 'Hardness',
+    kh: 'Temporal hardness',
+    behavior: 'Behavior',
+    coexistence: {
+      one: 'Coexistence',
+      other: 'Coexistences',
+      indiv: 'Individual',
+      couple: 'Couple',
+      onlyMasc: 'Only males',
+      onlyFem: 'Only females',
+      harem: 'Harem',
+      inverseHarem: 'Inverse harem',
+      mixedGroup: 'Mixed group',
+    },
+  },
+  featured: {
+    overtitle: 'More info in the app',
+    title: 'Plan your aquarium',
+    subtitle: 'Check your species compatibility',
+  },
+  behavior: {
+    cleaning: {
+        description: 'Reduce el crecimiento de algas, elimina los restos de comida y restos de plantas muertas en el tanque.',
+    },
+    wild: {
+        description: 'Nunca o raramente se ha conseguido reproducir en cautividad.',
+    },
+    schooling: {
+        description: 'Nada junto otros individuos de su misma especie de forma sincronizada en la misma dirección con una finalidad específica. Por ejemplo, alimentarse, reproducirse or defenderse.',
+    },
+    territorial: {
+        description: 'Un individuo o una pareja reproductora defiende un área.',
+    },
+    aggressive: {
+        description: 'Ataca otros individuos de su misma especie.',
+    },
+    jumper: {
+        description: 'Es capaz de saltar fuera del agua.',
+    },
+    algaeEater: {
+        description: 'Se alimenta de las algas que crecen en el tanque.',
+    },
+    predator: {
+        description: 'Se alimenta de otras especies, normalmente de menor tamaño.',
+    },
+    quiet: {
+        description: 'Poca actividad.',
+    },
+    sandDigger: {
+        description: 'Suele excavar o mover las arenas para alimentarse o buscar refugio.',
+    },
+    snailEater: {
+        description: 'Se alimenta de caracoles.',
+    },
+    clumsy: {
+        description: 'No es buen nadador. Esto suele deberse a la selección artificial reforzando cierta apariencia.',
+    },
+    lively: {
+        description: 'Lleno de vida y energia. Un nadador activo.',
+    },
+    nocturnal: {
+        description: 'Principalmente activo durante la noche o el crepúsculo.',
+    },
+    peaceful: {
+        description: 'Se lleva bien con los otras especies. No es agresivo.',
+    },
+    shy: {
+        description: 'Tímido y asustadizo. Tiende a esconderse y asustarse con frecuencia.',
+    },
+    gregarious: {
+        description: 'Live in flocks or loosely organized communitites.',
+    },
+    lover: {
+        description: 'Only one mate at a time.',
+    },
+    plantEater: {
+        description: 'Feed on plants.',
+    },
   },
 }
 

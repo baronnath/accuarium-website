@@ -3,11 +3,15 @@ import { Container, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import Social from './Social';
 import Legal from './Legal';
+import translator from '../translator/translator';
+
+const i18n = translator();
 
 const routes = [
-  { label: "Home", ref: "/" },
-  { label: "Blog", ref: "/blog" },
-  { label: "Press", ref: "/press" },
+  { label: i18n.t('menu.home'), ref: "/" },
+  { label: i18n.t('menu.blog'), ref: "/blog" },
+  { label: i18n.t('menu.species'), ref: "/species" },
+  // { label: i18n.t('menu.press'), ref: "/press" },
   // { name: "path name", link: "link url" }, like this
 ];
 

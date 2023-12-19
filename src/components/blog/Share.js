@@ -19,22 +19,43 @@ import {
 import { getDeviceType } from '../../helpers/global';
 import translator from '../../translator/translator';
 
-const Share = ({ id, isOpen, onClose, anchorEl, post, position = 'left' }) => {
+const Share = ({ id, isOpen, onClose, anchorEl, type, element, position = 'left' }) => {
 
   const i18n = translator();
+  let sh = {
+    title: '',
+    url: '',
+    slug: '',
+  }
+
+  switch(type) {
+    case 'post':
+      sh.title = element.title.rendered;
+      sh.url = `${window.location.origin}/post/${element.slug}`;
+      sh.slug = element.slug;
+      break;
+    case 'species':
+      const slug = element.scientificName.replace(' ', '-').toLowerCase();
+      sh.title = element.scientificName;
+      sh.url = `${window.location.origin}/species/${slug}`;
+      sh.slug = slug;
+      break;
+    default:
+      return;
+  }
+
+
 
 	function handleShare(method) {
-		const url = `${window.location.origin}/post/${post.slug}`;
     let link;
-    const encodedAhref = encodeURIComponent(url);
+    const encodedAhref = encodeURIComponent(sh.url);
 
     switch (method) {
     	case "whatsapp":
     		let baseUrl = getDeviceType() == "mobile"
     			? "api.whatsapp.com"
     			: "web.whatsapp.com";
-        link = `https://${baseUrl}/send?text=${post.title.rendered}%0A${encodedAhref}`;
-        console.log(link)
+        link = `https://${baseUrl}/send?text=${sh.title}%0A${encodedAhref}`;
         open(link);
         break
 
@@ -44,17 +65,17 @@ const Share = ({ id, isOpen, onClose, anchorEl, post, position = 'left' }) => {
         break
 
       case "twitter":
-        link = `https://twitter.com/share?url=${encodedAhref}&text=${post.title.rendered}`;
+        link = `https://twitter.com/share?url=${encodedAhref}&text=${sh.title}`;
         open(link);
         break
 
       case "email":
-      	link = `mailto:?subject=${post.title.rendered}&body=${i18n.t("share.emailBody")}%0A${encodedAhref}`;
+      	link = `mailto:?subject=${sh.title}&body=${i18n.t(`share.${type}.emailBody`)}%0A${encodedAhref}`;
       	open(link);
         break
 
       case "copy":
-        navigator.clipboard.writeText(url)
+        navigator.clipboard.writeText(sh.url)
         break
 
       default:
@@ -69,7 +90,7 @@ const Share = ({ id, isOpen, onClose, anchorEl, post, position = 'left' }) => {
 	return (
 		<Popover
 		  id={id}
-		  open={isOpen == post.slug}
+		  open={isOpen == sh.slug}
 		  onClose={() => onClose(false)}
 		  anchorEl={anchorEl}
 		  anchorOrigin={{

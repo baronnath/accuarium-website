@@ -1,4 +1,7 @@
 const es = {
+  general: {
+    close: 'Cerrar',
+  },
   prelaunch: {
     hero: {
       title: 'Crea un tanque equilibrado',
@@ -24,6 +27,7 @@ const es = {
     subscribe: 'Suscripción',
     press: 'Prensa',
     blog: 'Blog',
+    species: 'Peces',
   },
   home: {
     section1: {
@@ -200,12 +204,143 @@ const es = {
   },
   share: {
     copyLink: 'Copiar enlace',
-    emailBody: 'Echa un vistazo a esta publicación de accuarium:',
+    post: {
+      emailBody: 'Echa un vistazo a esta publicación de accuarium:',
+    },
+    species: {
+      emailBody: 'Echa un vistazo a esta especie de pez en accuarium:',
+    },
   },
   notFound: {
     title: 'Página no encontrada',
     description: 'La página que estás buscando no existe o ha sido eliminada.',
     callToAction: 'Volver',
+  },
+  measures: {
+    ppm: 'Partes por millón',
+    ppmAbbr: 'ppm',
+    mg: 'Miligramos',
+    mgAbbr: 'mg',
+    µS: 'Microsiemens ',
+    µSAbbr: 'µS',
+    gH: 'Grados',
+    gHAbbr: 'dGH',
+    kH: 'Grados',
+    kHAbbr: 'dKH',
+    liter: 'Litros',
+    literAbbr: 'L',
+    m3: 'Metros cuadrados',
+    m3Abbr: 'm³',
+    gallon: 'Galones',
+    gallonAbbr: 'gal',
+    ounce: 'Onzas',
+    ounceAbbr: 'oz',
+    cm: 'Centímetros',
+    cmAbbr: 'cm',
+    m: 'Metros',
+    mAbbr: 'm',
+    mm: 'Milímetros',
+    mmAbbr: 'mm',
+    in: 'Pulgadas',
+    inAbbr: '"',
+    ft: 'Pies',
+    ftAbbr: '\'',
+    celsius: 'Grados celsius',
+    celsiusAbbr: 'ºC',
+    fahrenheit: 'Grados fahrenheit',
+    fahrenheitAbbr: 'ºF',
+    kelvin: 'Grados kelvin',
+    kelvinAbbr: 'ºK',
+    measureNotFound: 'La medida no ha sido encontrada',
+    unitNotFound: 'La unidad no ha sido encontrada',
+  },
+  species: {
+    size: 'Tamaño',
+    minTank: 'Volumen mín. de tanque',
+    feed: {
+      one: 'Alimentación',
+    },
+    swimArea: 'Área de nado',
+    temperature: 'Temperatura',
+    ph: 'pH',
+    gh: 'Dureza',
+    kh: 'Dureza temporal',
+    behavior: 'Comportamiento',
+    coexistence: {
+      one: 'Coexistencia',
+      other: 'Coexistencias',
+      indiv: 'Individual',
+      couple: 'Pareja',
+      onlyMasc: 'Solo machos',
+      onlyFem: 'Solo hembras',
+      harem: 'Harén',
+      inverseHarem: 'Harén invertido',
+      mixedGroup: 'Grupo mixto',
+    },
+  },
+  featured: {
+    overtitle: 'Más info en la app',
+    title: 'Planifica tu acuario',
+    subtitle: 'Comprueba la compatibilidad de las especies'
+  },
+  behavior: {
+    cleaning: {
+        description: 'Reduce el crecimiento de algas, elimina los restos de comida y restos de plantas muertas en el tanque.',
+    },
+    wild: {
+        description: 'Nunca o raramente se ha conseguido reproducir en cautividad.',
+    },
+    schooling: {
+        description: 'Nada junto otros individuos de su misma especie de forma sincronizada en la misma dirección con una finalidad específica. Por ejemplo, alimentarse, reproducirse or defenderse.',
+    },
+    territorial: {
+        description: 'Un individuo o una pareja reproductora defiende un área.',
+    },
+    aggressive: {
+        description: 'Ataca otros individuos de su misma especie.',
+    },
+    jumper: {
+        description: 'Es capaz de saltar fuera del agua.',
+    },
+    algaeEater: {
+        description: 'Se alimenta de las algas que crecen en el tanque.',
+    },
+    predator: {
+        description: 'Se alimenta de otras especies, normalmente de menor tamaño.',
+    },
+    quiet: {
+        description: 'Poca actividad.',
+    },
+    sandDigger: {
+        description: 'Suele excavar o mover las arenas para alimentarse o buscar refugio.',
+    },
+    snailEater: {
+        description: 'Se alimenta de caracoles.',
+    },
+    clumsy: {
+        description: 'No es buen nadador. Esto suele deberse a la selección artificial reforzando cierta apariencia.',
+    },
+    lively: {
+        description: 'Lleno de vida y energia. Un nadador activo.',
+    },
+    nocturnal: {
+        description: 'Principalmente activo durante la noche o el crepúsculo.',
+    },
+    peaceful: {
+        description: 'Se lleva bien con los otras especies. No es agresivo.',
+    },
+    shy: {
+        description: 'Tímido y asustadizo. Tiende a esconderse y asustarse con frecuencia.',
+    },
+    gregarious: {
+        description: 'Live in flocks or loosely organized communitites.',
+    },
+    lover: {
+        description: 'Only one mate at a time.',
+    },
+    plantEater: {
+        description: 'Feed on plants.',
+    },
   },
 };
 

@@ -110,7 +110,7 @@ const Posts = () => {
                     >
                       {i18n.t('blog.share')}
                     </Button>
-                    <Share id={`share-${post.slug}`} isOpen={share} onClose={setShare} anchorEl={anchorEl} post={post}/>
+                    <Share id={`share-${post.slug}`} isOpen={share} onClose={setShare} anchorEl={anchorEl} element={post} type="post"/>
                     <Button size="small">
                       <Link to={`/post/${post.slug}`} className="btn btn-secondary float-right" style={{ textDecoration: 'none', color: colors.primary }}>
                         {i18n.t('blog.readMore')}

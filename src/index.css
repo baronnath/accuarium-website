@@ -20,8 +20,8 @@ code {
 }
 
 .MuiBox-root > * {
-  margin-block-start: 1.8rem;
-  margin-block-end: 0;
+ /* margin-block-start: 1.8rem;
+  margin-block-end: 0;*/
 }
 
 .is-layout-flow > .aligncenter {

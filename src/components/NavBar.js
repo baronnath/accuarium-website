@@ -14,31 +14,37 @@ const i18n = translator();
 
 // Home menu
 const homePages = [{ 
-    label: i18n.t('menu.feature'),
-    ref: 'sectionFeature',
-  },
-  { 
-    label: i18n.t('menu.news'),
-    ref: 'sectionNews',
-  },
-  { 
-    label: i18n.t('menu.faq'),
-    ref: 'sectionFaq',
-  }];
+      label: i18n.t('menu.feature'),
+      ref: 'sectionFeature',
+    },
+    { 
+      label: i18n.t('menu.news'),
+      ref: 'sectionNews',
+    },
+    { 
+      label: i18n.t('menu.faq'),
+      ref: 'sectionFaq',
+    }
+  ];
 
 // Web menu (rest of pages)
 const webPages = [{
-    label: i18n.t('menu.home'),
-    ref: '/',
-  },
-  { 
-    label: i18n.t('menu.blog'),
-    ref: '/blog',
-  },
-  { 
-    label: i18n.t('menu.press'),
-    ref: '/press',
-  }];
+      label: i18n.t('menu.home'),
+      ref: '/',
+    },
+    { 
+      label: i18n.t('menu.blog'),
+      ref: '/blog',
+    },
+    { 
+      label: i18n.t('menu.species'),
+      ref: '/species',
+    },
+    // { 
+    //   label: i18n.t('menu.press'),
+    //   ref: '/press',
+    // }
+  ];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

@@ -116,7 +116,7 @@ const Post = () => {
                   >
                     {i18n.t("blog.share")}
                   </Button>
-                  <Share id={`share-${post.slug}`} isOpen={share} onClose={setShare} anchorEl={anchorEl} post={post} position="center" />
+                  <Share id={`share-${post.slug}`} isOpen={share} onClose={setShare} anchorEl={anchorEl}  element={post} type="post" position="center" />
                 </Box>
               </Container>
             </>

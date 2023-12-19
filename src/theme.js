@@ -14,7 +14,7 @@ export const colors = {
   lightText: '#969696',
   background: '#f6f6f6',
   placeholder: color('#000000').alpha(0.54).rgb().string(),
-  disabled: color('#000000').alpha(0.26).rgb().string(),
+  disabled: color('#ffffff').alpha(0.2).rgb().string(),
   transparent: color('#000000').alpha(0).rgb().string(),
   white: '#fff',
 };

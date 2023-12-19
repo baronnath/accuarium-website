@@ -1,7 +1,8 @@
 {
   "backend": {
-    "url": "https://api.accuarium.app",
-    "imagesUrl": "https://api.accuarium.app/images/",
+    "url": "http://localhost:8080",
+    "imagesUrl": "http://localhost:8080/images/",
+    "imageDefaultUrl": "https://dummyimage.com/1000x1000/000000/ffffff.jpg&text=",
     "blog": "https://blog.accuarium.app/wp-json"
   },
   "pagination": 10

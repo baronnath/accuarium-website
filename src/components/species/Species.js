@@ -117,10 +117,11 @@ const Species = () => {
     api.getSpeciesByName(scientificName)
       .then(res => { 
         setSpecies(res.data.species);
+        console.log('SPECIES',res.data.species);
         setLoading(false);
       })
       .catch(err => {
-        handleError(navigate('/404-not-found'));
+        handleError(err);
       });
 
   },[]);
@@ -326,10 +327,7 @@ const Species = () => {
               <Box sx={styles.heroContainer}>
                 <Container sx={styles.speciesImageContainer} maxWidth="sm">
                     <img
-                      src={species.images ?
-                        `${config.backend.imagesUrl}species/${species.scientificName.replace(' ', '-').toLowerCase()}/${species.images[0]}`
-                        :
-                        `${config.backend.imageDefaultUrl}${species.scientificName}`}
+                      src={`${config.backend.imagesUrl}species/${species.scientificName.replace(' ', '-').toLowerCase()}/${species.images[0]}`}
                       alt={species.scientificName}
                       loading="lazy"
                       style={styles.speciesImage}

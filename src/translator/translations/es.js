@@ -1,6 +1,7 @@
 const es = {
   general: {
     close: 'Cerrar',
+    download: 'Descargar',
   },
   prelaunch: {
     hero: {
@@ -181,6 +182,10 @@ const es = {
     uploadCompatibilities: 'Compatibilidades',
     success: 'El archivo se ha subido correctamente',
     error: 'Se ha producido un error al subir el archivo',
+  },
+  reports: {
+    sitemap: 'Sitemap',
+    success: 'El informe se ha descargado correctamente',
   },
   thankYou: {
     title: 'Gracias por suscrbiirte',

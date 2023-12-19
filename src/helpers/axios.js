@@ -77,6 +77,11 @@ export class Api {
 		return this._getSpecies(params);
 	}
 
+	getSitemapReport() {
+		let params = {'sitemapReport': true};
+		return this._getSpecies(params);
+	}
+
 	_getSpecies(params) {
 		return axios.get(backend.url + '/species', {params: params});
 	}

@@ -31,6 +31,7 @@ import DashboardMenu from './components/dashboard/Menu';
 import Dashboard from './components/dashboard/Dashboard';
 import Permissions from './components/dashboard/Permissions';
 import FileUpload from './components/dashboard/FileUpload';
+import Reports from './components/dashboard/Reports';
 
 import PrivacyPolicy from './components/legal/PrivacyPolicy';
 import CookiesPolicy from './components/legal/CookiesPolicy';
@@ -116,6 +117,7 @@ function App() {
             <Route path="" element={<DashboardRoute><Dashboard /></DashboardRoute>} />
             <Route path="permissions" element={<DashboardRoute><Permissions /></DashboardRoute>} />
             <Route path="file-upload" element={<DashboardRoute><FileUpload /></DashboardRoute>} />
+            <Route path="reports" element={<DashboardRoute><Reports /></DashboardRoute>} />
           </Route>
           {/*Redirect to app*/}
           <Route exact path="app/:screen/:id?" element={<RedirectComponent/>} />

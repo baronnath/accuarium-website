@@ -10,7 +10,9 @@ import Icon from '@mdi/react';
 import {
   mdiViewDashboardOutline,
   mdiFileUploadOutline,
-  mdiShieldAccountVariantOutline } from '@mdi/js';
+  mdiShieldAccountVariantOutline,
+  mdiTextBoxMultipleOutline,
+} from '@mdi/js';
 import Divider from '@mui/material/Divider';
 import translator from '../../translator/translator';
 
@@ -45,6 +47,16 @@ import translator from '../../translator/translator';
           />
         </ListItemIcon>
         <ListItemText primary="File upload" />
+      </ListItemButton>
+      <ListItemButton component={Link} to="/dashboard/reports">
+        <ListItemIcon>
+          <Icon
+            path={mdiTextBoxMultipleOutline}
+            title="Reports"
+            size={1}
+          />
+        </ListItemIcon>
+        <ListItemText primary="Reports" />
       </ListItemButton>
     </>
   );

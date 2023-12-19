@@ -10,8 +10,6 @@ import { colors } from '../../theme';
 const Modal = ({isOpen, setOpen, children}) => {
   const i18n = translator();
 
-  console.log('isOpen',isOpen);
-
   return (
     <Muimodal
       open={isOpen}

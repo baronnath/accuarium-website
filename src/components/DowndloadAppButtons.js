@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import { useWindowDimensions, gAnalyticsEvent } from '../helpers/global';
+import { gAnalyticsEvent } from '../helpers/global';
 import translator from '../translator/translator';
 import theme, { colors } from '../theme';
 
@@ -10,7 +10,6 @@ const DowndloadAppButtons = ({ size }) => {
   const i18n = translator();
 
   const theme = useTheme();
-  const { height, width } = useWindowDimensions();
 
   const styles = {
     downloadButtonsContainer: {

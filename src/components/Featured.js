@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link, Box, Button, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import videoSource from '../assets/video/pexels-african-aquarium.mp4';
 import { useTheme } from '@mui/material/styles';
-import { useWindowDimensions, gAnalyticsEvent } from '../helpers/global';
-import Subscribe from './Subscribe';
 import DowndloadAppButtons from './DowndloadAppButtons';
 import translator from '../translator/translator';
 import theme, { colors } from '../theme';
@@ -13,7 +11,6 @@ const Featured = () => {
   const i18n = translator();
 
   const theme = useTheme();
-  const { height, width } = useWindowDimensions();
 
    return (
     <Box sx={styles.container}>

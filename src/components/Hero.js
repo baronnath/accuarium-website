@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link, Box, Button, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import heroVideo from '../assets/video/pexels-water-bg.mp4';
 import { useTheme } from '@mui/material/styles';
-import { useWindowDimensions, gAnalyticsEvent } from '../helpers/global';
-import Subscribe from './Subscribe';
 import DowndloadAppButtons from './DowndloadAppButtons';
 import translator from '../translator/translator';
 import theme, { colors } from '../theme';
@@ -13,7 +11,6 @@ const Hero = () => {
   const i18n = translator();
 
   const theme = useTheme();
-  const { height, width } = useWindowDimensions();
 
    return (
     <section style={styles.root} id="section0">

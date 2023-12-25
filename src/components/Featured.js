@@ -4,6 +4,7 @@ import videoSource from '../assets/video/pexels-african-aquarium.mp4';
 import { useTheme } from '@mui/material/styles';
 import { useWindowDimensions, gAnalyticsEvent } from '../helpers/global';
 import Subscribe from './Subscribe';
+import DowndloadAppButtons from './DowndloadAppButtons';
 import translator from '../translator/translator';
 import theme, { colors } from '../theme';
 
@@ -47,11 +48,7 @@ const Featured = () => {
           <Typography variant="h6" component="h3" sx={styles.subtitle}>
             {i18n.t('featured.subtitle')}
           </Typography>
-          <Box sx={styles.downloadButtonContainer}>
-            <a href={i18n.t('googlePlay.href')} onClick={() => gAnalyticsEvent('playStoreClick')}>
-              <img style={styles.downloadButton} alt={i18n.t('googlePlay.alt')} src={i18n.t('googlePlay.src')}/>
-            </a>
-          </Box>
+          <DowndloadAppButtons  size={{xs: '60%', sm:'40%'}}/>
         </Box>
       </Box>
     </Box>
@@ -100,6 +97,7 @@ const styles = {
   subtitle: {
     width: '100%',
     fontSize: 16,
+    marginBottom: {xs: 4},
   },
   textContainer: {
     flex: 6,

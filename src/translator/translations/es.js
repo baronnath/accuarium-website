@@ -19,6 +19,11 @@ const es = {
     href: 'https://play.google.com/store/apps/details?id=com.nathanlosabe.accuarium',
     alt: 'Disponible en Google Play',
   },
+  appStore: {
+    src: 'es-badge.png',
+    href: 'https://apple.co/3tyBLRp',
+    alt: 'Disponible en App Store',
+  },
   menu: {
     download: 'Descargar',
     feature: 'Características',
@@ -282,6 +287,7 @@ const es = {
       inverseHarem: 'Harén invertido',
       mixedGroup: 'Grupo mixto',
     },
+    noSpecies: 'There are no more species',
   },
   featured: {
     overtitle: 'Más info en la app',

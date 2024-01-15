@@ -21,6 +21,7 @@ import SearchSpecies from './components/species/SearchSpecies';
 import Species from './components/species/Species';
 import Press from './components/Press';
 import Subscribe from './components/Subscribe';
+import About from './components/About';
 import Footer from './components/Footer';
 import ThankYou from './components/ThankYou';
 import DeleteAccount from './components/DeleteAccount';
@@ -103,6 +104,7 @@ function App() {
             <Route path="species/:slug" element={<Species />} />
             <Route path="species" element={<SearchSpecies />} />
             <Route path="press" element={<Press />} />
+            <Route path="about" element={<About />} />
             <Route path="thankyou" element={<ThankYou />} />
 
             <Route path="privacy-policy" element={<PrivacyPolicy />} />

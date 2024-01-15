@@ -40,10 +40,10 @@ const webPages = [{
       label: i18n.t('menu.species'),
       ref: '/species',
     },
-    // { 
-    //   label: i18n.t('menu.press'),
-    //   ref: '/press',
-    // }
+    { 
+      label: i18n.t('menu.about'),
+      ref: '/about',
+    }
   ];
 
 const ResponsiveAppBar = () => {

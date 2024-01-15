@@ -34,6 +34,7 @@ const es = {
     press: 'Prensa',
     blog: 'Blog',
     species: 'Peces',
+    about: 'Conócenos',
   },
   home: {
     section1: {
@@ -122,6 +123,33 @@ const es = {
       9: {
         question: '¿Es la acuariofilia crueldad animal?',
         answer: 'La acuariofilia en sí misma no es inherentemente crueldad animal. La mayoría de los acuaristas son amantes de los animales que se preocupan profundamente por el bienestar de los peces y otros animales acuáticos en sus acuarios. Sin embargo, es importante abordar este tema desde una perspectiva ética y garantizar que se brinde un cuidado adecuado a los animales acuáticos en los acuarios. accuarium ayuda a los acuaristas a investigar y comprender las necesidades específicas de cada especie. Un acuarista responsable debe proporcionarl un ambiente adecuado y asegurarse de que se brinde a sus animales una atención integral. Además, es fundamental evitar prácticas que causen daño o sufrimiento innecesario a los animales acuáticos, como la sobrepoblación, la selección irresponsable de especies o el mal manejo de enfermedades. La educación continua y la búsqueda de información actualizada sobre las mejores prácticas de acuariofilia son fundamentales para garantizar el bienestar de los animales. En última instancia, la acuariofilia ética se basa en el respeto y el cuidado responsable de los animales acuáticos, centrándose en su bienestar y calidad de vida. Por esta misma razón, desde accuarium animamos a no comprar o adquirir animales o plantas salvaje para tus acuarios. Puedes encontrar señaladas todas las especies que probablemente hayan sido sustraídas de la naturaleza. Al seguir pautas éticas y brindar un entorno adecuado, la acuariofilia puede ser una forma enriquecedora y educativa de apreciar y aprender sobre los ecosistemas acuáticos, así como de participar en la conservación y protección de las especies. En definitiva, la acuariofilia está llevando a cabo una bonita tarea. Los hábitats de muchas especies están en peligro y los acuarios están conservando muchas de éstas. En algunos caso incluso han hecho posible la reintroducción de algunas especies en sus hábitat originales. Todo gracias a la acuariofilia.',
+      },
+    },
+  },
+  about: {
+    mission: {
+      title: 'Misión',
+      text: {
+        1: 'Accuarium en más que una comuninidad y plataforma, une a las personas a través de la pasión por la acuariofilia. Proporcionamos herramientas efectivas y educativas que no solo promueven prácticas responsables, sino que también sirve como puente hacia un compromiso más profundo con la vida acuática.',
+        2: 'Los beneficios generados se convierten en esperanza para los ecosistemas acuáticos, porque la magia de los acuarios no solo está en su belleza, sino en la conservación de la vida bajo el agua.',
+      },
+    },
+    vision: {
+      title: 'Visión',
+      text: {
+        1: 'Visionamos un mundo donde la acuariofilia es más que una afición en el que todos los acuaristas están unidos por un propósito común: la conservación y cuidado de la vida acuática. En nuestra visión cada acuario refleja el compromiso colectivo con prácticas responsables. Queremos inspirar a generaciones futuras a apreciar y proteger la riqueza de océanos, mares, ríos y lagos.',
+        2: 'Imaginamos a accuarium como el catalizador para el cambio positivo hacia el respeto y la conservación de los medios acuáticos. En este futuro, nuestros acuarios llegan más allá de los límites de sus vidrios para cuidar de nosotros mismos y del planeta que compartimos.',
+      },
+    },
+    behind: {
+      title: 'Quién hay detrás',
+      1: {
+        title: 'Natán Morote',
+        description: 'Soy el creador de accuarium. La acuariofilia me ha fascinado desde chico.',
+      },
+      2: {
+        title: 'Javier Rubio',
+        description: 'Soy zoólogo especializado en acuariofilia. Siempre estoy rodeado de acuarios y naturaleza.',
       },
     },
   },

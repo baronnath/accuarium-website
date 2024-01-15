@@ -34,6 +34,7 @@ const en = {
     press: 'Press',
     blog: 'Blog',
     species: 'Fish',
+    about: 'About',
   },
   home: {
     section1: {
@@ -122,6 +123,33 @@ const en = {
       9: {
         question: 'Is fishkeeping animal cruelty?',
         answer: 'Fishkeeping itself is not inherently animal cruelty. Most aquarium hobbyists are animal lovers who deeply care about the well-being of the fish and other aquatic animals in their tanks. However, it\'s important to address this issue from an ethical perspective and ensure that proper care is provided to the aquatic animals in aquariums. accuarium helps aquarium hobbyists research and understand the specific needs of each species. A responsible aquarist should provide an appropriate environment and ensure comprehensive care for their animals. Additionally, it is crucial to avoid practices that cause harm or unnecessary suffering to the aquatic animals, such as overpopulation, irresponsible species selection, or mishandling of diseases. Ongoing education and seeking updated information on best aquarium practices are essential to ensure the well-being of the animals. Ultimately, ethical aquarium keeping is based on respect and responsible care for the aquatic animals, focusing on their welfare and quality of life. For this reason, at accuarium, we encourage not purchasing or acquiring wild animals or plants for your aquariums. You can find marked all the species that have likely been taken from the wild. By following ethical guidelines and providing a suitable environment, aquarium keeping can be an enriching and educational way to appreciate and learn about aquatic ecosystems, as well as participate in the conservation and protection of species. Ultimately, aquarium keeping is undertaking a meaningful task. The habitats of many species are endangered, and aquariums are conserving many of them. In some cases, the reintroduction of certain species to their original habitats possible was possible. All thanks to fishkeeping.',
+      },
+    },
+  },
+  about: {
+    mission: {
+      title: 'Mission',
+      text: {
+        1: 'Accuarium is more than just a community and platform; it brings people together through a passion for aquaristics. We provide effective and educational tools that not only promote responsible practices but also serve as a bridge to a deeper commitment to aquatic life.',
+        2: 'The benefits generated become hope for aquatic ecosystems because the magic of aquariums lies not only in their beauty but in the conservation of life underwater.',
+      },
+    },
+    vision: {
+      title: 'Vision',
+      text: {
+        1: 'We envision a world where aquaristics is more than a hobby, where all aquarists are united by a common purpose: the conservation and care of aquatic life. In our vision, each aquarium reflects the collective commitment to responsible practices. We aim to inspire future generations to appreciate and protect the richness of oceans, seas, rivers, and lakes.',
+        2: 'We imagine accuarium as the catalyst for positive change towards respect and conservation of aquatic environments. In this future, our aquariums extend beyond the confines of their glass walls to take care of ourselves and the planet we share.',
+      },
+    },
+    behind: {
+      title: 'Who\'s behind',
+      1: {
+        title: 'Natán Morote',
+        description: 'I\'m the creator of accuarium. Aquaristics has fascinated me since I was a child.',
+      },
+      2: {
+        title: 'Javier Rubio',
+        description: 'I\'m a zoologist specializing in aquaristics. I\'m always surrounded by aquariums and nature.',
       },
     },
   },

@@ -29,7 +29,7 @@ const About = () => {
               src={require('../assets/img/natan-morote.jpg')}
               sx={{ width: 120, height: 120}}
             />
-            <Typography style={{marginTop: 30}} color={colors.secondary}>
+            <Typography style={{marginTop: 30}} color={colors.primary}>
               <b>{i18n.t('about.behind.1.title')}</b>
             </Typography>
             <Typography style={styles.fullWidth}>
@@ -42,7 +42,7 @@ const About = () => {
               src={require('../assets/img/javier-rubio.jpg')}
               sx={{ width: 120, height: 120}}
             />
-            <Typography style={{marginTop: 30}} color={colors.secondary}>
+            <Typography style={{marginTop: 30}} color={colors.primary}>
               <b>{i18n.t('about.behind.2.title')}</b>
             </Typography>
             <Typography style={styles.fullWidth}>
@@ -51,7 +51,7 @@ const About = () => {
           </Box>
         </Box>
 
-        <Typography variant="h3" component="h1" style={{...styles.fullWidth, ...styles.title}}>
+        <Typography variant="h3" component="h1" fontSize={30} style={{...styles.fullWidth, ...styles.title}}>
           {i18n.t('about.mission.title')}
         </Typography>
         <Typography style={styles.fullWidth}>
@@ -61,7 +61,7 @@ const About = () => {
           {i18n.t('about.mission.text.2')}
         </Typography>
 
-        <Typography variant="h3" component="h1" style={{...styles.fullWidth, ...styles.title}}>
+        <Typography variant="h3" component="h1" fontSize={30} style={{...styles.fullWidth, ...styles.title}}>
           {i18n.t('about.vision.title')}
         </Typography>
         <Typography style={styles.fullWidth}>
@@ -70,8 +70,6 @@ const About = () => {
         <Typography style={styles.fullWidth}>
           {i18n.t('about.vision.text.2')}
         </Typography>
-
-        <Social color={colors.white} align={'left'} style={styles.social}/>
       </Box>
     </Container>
   );

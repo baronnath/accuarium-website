@@ -81,6 +81,11 @@ const es = {
       },
       subtitle: 'Enseña al mundo tus proyectos',
     },
+    section6: {
+      title: 'Genera un impacto positivo',
+      subtitle: 'Nos preocupamos por los peces y sus hábitats',
+      description: 'Los beneficios generados cuando usas accuarium se destinan directamen al cuidado de los espacios naturales acuáticos.',
+    },
   },
   news: {
     title: 'Últimas noticias'

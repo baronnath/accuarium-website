@@ -2,12 +2,12 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
-import { Typography, Box } from '@mui/material';
+import { Typography, Box, Paper } from '@mui/material';
 import Hero from './Hero';
 import MastodonFeed from './MastodonFeed';
 import FAQ from './FAQ';
 import Icon from '@mdi/react';
-import { mdiShieldStarOutline, mdiMicroscope, mdiEarth, mdiHeart, mdiThumbUp, mdiShareVariant } from '@mdi/js';
+import { mdiShieldStarOutline, mdiMicroscope, mdiEarth, mdiHeart, mdiThumbUp, mdiShareVariant, mdiHeartCircle } from '@mdi/js';
 import translator from '../translator/translator';
 import { colors } from '../theme';
 
@@ -55,6 +55,17 @@ const Home = () => {
               })
             }
           </Grid>
+
+          <Paper style={styles.sectionContainer} sx={styles.surface}>
+            <Icon
+              path={mdiHeartCircle}
+              title={i18n.t('home.section6.title')}
+              size={3}
+            />
+            <Typography variant="h3" fontSize={36}>{i18n.t('home.section6.title')}</Typography>
+            <Typography variant="h5" fontSize={15} fontWeight="bold" color={colors.background} sx={{marginTop: 4}}>{i18n.t('home.section6.subtitle')}</Typography>
+            <Typography sx={{marginTop: 1}}>{i18n.t('home.section6.description')}</Typography>
+          </Paper>
 
           <Grid container spacing={2} style={styles.sectionContainer} sx={{ marginTop:10 }}>
             <Grid item xs={12} sm={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
@@ -153,6 +164,16 @@ const Home = () => {
 const styles = {
   section: {
     // height: 500,
+  },
+  surface: {
+    width: {xs: '100%', sm: '60%'},
+    marginLeft: {xs: '0%', sm: '20%'},
+    marginTop: 10,
+    padding: {xs: 2, sm: 5, md: 10},
+    backgroundColor: colors.primary,
+    flexDirection: 'column',
+    textAlign: 'center',
+    color: colors.background,
   },
   item: {
     textAlign: 'center',

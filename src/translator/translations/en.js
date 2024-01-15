@@ -81,6 +81,11 @@ const en = {
       },
       subtitle: 'Show the world your projects',
     },
+    section6: {
+      title: 'Make a positive impact',
+      subtitle: 'We care about fish and their habitats',
+      description: 'The benefits generated when you use accuarium are directly allocated to the care of aquatic natural spaces.',
+    },
   },
   news: {
     title: 'Latest news'
